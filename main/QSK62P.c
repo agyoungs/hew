@@ -6,9 +6,10 @@ void main(void){
 	long count = 0;
 	int i = 0;
 	int nyan = 0;
-	MCUInit();
+	cpu_init();
 	lcd_init("SNYANYAN");
-	InitUART();
+	uart_init();
+	timer_init();
 	while(1){
 		count = 100000;
 		while(--count != 0){

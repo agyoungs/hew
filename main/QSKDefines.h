@@ -86,7 +86,7 @@
 #define TX0_INTERRUPTS_ENABLED                 (s0tic != 0)
 #define RX0_INTERRUPTS_ENABLED                 (s0ric != 0)
 
-#define BAUD_RATE  9600
+#define BAUD_RATE  115200
 
 /* Switches */
 #define	S1 				p8_3 

@@ -1,0 +1,29 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"main" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\cygwin\home\root\git\hew\main\extern.h" 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" 
+"C:\cygwin\home\root\git\hew\main\LCD.c" 
+"C:\cygwin\home\root\git\hew\main\LCD.h" 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" 
+"C:\cygwin\home\root\git\hew\main\proto.h" 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" 
+"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 
+[WORKSPACE_FILE_STATES]
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" -8 -30 1652 764 1 7 
+"C:\cygwin\home\root\git\hew\main\LCD.c" 50 50 1411 461 0 3 
+"C:\cygwin\home\root\git\hew\main\LCD.h" 75 75 1411 461 0 4 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" 25 25 1411 461 0 2 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" 225 225 1407 457 0 0 
+"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 0 0 1411 461 0 1 
+"C:\cygwin\home\root\git\hew\main\extern.h" 150 150 1411 501 0 6 
+"C:\cygwin\home\root\git\hew\main\proto.h" 125 125 1411 501 0 5 
+[LOADED_PROJECTS]
+"main" 
+[END]

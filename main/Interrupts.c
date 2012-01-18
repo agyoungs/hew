@@ -28,126 +28,44 @@
 #pragma INTERRUPT RTCInterrupt
 #pragma INTERRUPT WatchDogInterrupt
 
-
-
-void A2DInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void A2DInterrupt(void){
 }
 
-void UART0TransmitInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void UART0TransmitInterrupt(void){
 }
 
-void DMA0Interrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void DMA0Interrupt(void){
 }
 
-void UART0ReceiveInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void UART0ReceiveInterrupt(void){
 }
 
-void TimerA1Interrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void TimerA1Interrupt(void){
 }
 
-void TimerA2Interrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void TimerA2Interrupt(void){
 }
 
-void TimerB0Interrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void TimerB0Interrupt(void){
+	/* check for timer overflow */
+  	if (mr3_tb0mr == 1){	
+		/* if so clear flag and data invalid, so exit routine */
+  	 	tb0mr = 0x4a;
+    	return;					
+  	}
+ 	if (p8 == 0x01)
+		p8 &= ~0x01;    
+ 	else
+		p8 |= 0x01;	
 }
 
-void KeyBoardInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void KeyBoardInterrupt(void){
 }
 
-void WakeUpInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void WakeUpInterrupt(void){
 }
 
-void RTCInterrupt(void)
-//-----------------------------------------------------------------------------------------------------
-//  Purpose:	Unused in this program
-//  
-//
-//  Rev:    1.0     Initial Release
-//  
-//  Notes:          None    
-//-----------------------------------------------------------------------------------------------------
-{
+void RTCInterrupt(void){
 }
 
 void WatchDogInterrupt(void)

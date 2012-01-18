@@ -23,7 +23,7 @@ void lcd_init(char far StartupString1[] ){
 	LCD_write(CTRL_WR,LCD_HOME_L1);
 	lcd_puts(LCD_LINE1, LOGO);
 	BNSPrintf(LCD_FILE_NUM, "\t%8s\n%8s",LOGO, StartupString1);	
-	DisplayDelay(60);	
+	//DisplayDelay(60);	
 }
 
 void BNSPutch(uint where, char c){
@@ -111,7 +111,6 @@ void DisplayDelay(unsigned long int units){
 		_asm ("NOP");
 	}
 }
-
 
 unsigned char BNSPrintf(uint where, char * f, ...){
     char        c;
