@@ -1,0 +1,2 @@
+Empty Example
+This program shows the basic framework of an empty application.
