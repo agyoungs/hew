@@ -1,9 +1,10 @@
 -L "nc30lib"
 -G
 -MS
--O "C:\cygwin\home\root\git\hew\main\Debug\main.x30"
-"C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30"
-"C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30"
-"C:\cygwin\home\root\git\hew\main\Debug\LCD.r30"
-"C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30"
-"C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30"
+-O "C:\cygwin\home\m\git\hew\main\Debug\main.x30"
+"C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30"
+"C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30"
+"C:\cygwin\home\m\git\hew\main\Debug\LCD.r30"
+"C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30"
+"C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30"
+"C:\cygwin\home\m\git\hew\main\Debug\uart.r30"

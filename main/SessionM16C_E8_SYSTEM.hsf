@@ -219,16 +219,15 @@
 "{WK_TB00000028_RTOSDEBUG}" "TOOLBAR 0" 59419 2 1 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
 "{WK_TB00000029_SYSTEMTOOL}" "TOOLBAR 0" 59419 2 3 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
 [WINDOW_Z_ORDER]
-"C:\cygwin\home\root\git\hew\main\QSK62P.c" 
-"C:\cygwin\home\root\git\hew\main\extern.h" 
-"C:\cygwin\home\root\git\hew\main\proto.h" 
-"C:\cygwin\home\root\git\hew\main\sfr62p.h" 
-"C:\cygwin\home\root\git\hew\main\LCD.c" 
-"C:\cygwin\home\root\git\hew\main\Interrupts.c" 
-"C:\cygwin\home\root\git\hew\main\MCUInit.c" 
-"C:\cygwin\home\root\git\hew\main\LCD.h" 
-"C:\cygwin\home\root\git\hew\main\nc_define.inc" 
-"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 
+"C:\cygwin\home\m\git\hew\main\sect30.inc" 
+"C:\cygwin\home\m\git\hew\main\ncrt0.a30" 
+"C:\cygwin\home\m\git\hew\main\Interrupts.c" 
+"C:\cygwin\home\m\git\hew\main\proto.h" 
+"C:\cygwin\home\m\git\hew\main\uart.c" 
+"C:\cygwin\home\m\git\hew\main\QSK62P.c" 
+"C:\cygwin\home\m\git\hew\main\MCUInit.c" 
+"C:\cygwin\home\m\git\hew\main\extern.h" 
+"C:\cygwin\home\m\git\hew\main\LCD.c" 
 [TARGET_NAME]
 "M16C E8 SYSTEM" "" 0 
 [STATUSBAR_STATEINFO_VD1]

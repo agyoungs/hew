@@ -74,7 +74,7 @@ void lcd_puts(unsigned char position, _far const char * string){
 	while(*string);
 }
 
-void lcd_write_fb(struct lcd_fb_t* fb){
+void lcd_write_fb(struct lcd_fb* fb){
 	int i;
 	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1));
 	for(i = 0; i < 8; i++){

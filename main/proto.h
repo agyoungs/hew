@@ -1,17 +1,15 @@
 #include "extern.h"
-/***********************************************************************/
-/*                                                                     */
-/*  DATE        :Mon, Mar 23, 2009                                     */
-/*																	   */
-/*  DESCRIPTION :  All functions that need prototyping should be       */
-/* 	  				prototyped here. 								   */
-/*																	   */
-/*  CPU GROUP   :62P                                                   */
-/*                                                                     */
-/*  Copyright (c) 2009 by BNS Solutions, Inc.						   */
-/*  All rights reserved.											   */
-/*                                                                     */
-/***********************************************************************/
+
+struct lcd_fb{
+	char line1[8];
+	char line2[8];
+};
+
+struct uart_buf{
+	char buf[64];
+	char buf_i;
+};
+
 void lcd_write_fb(struct lcd_fb* fb);
 void A2DInit(void);
 void lcd_init(char far StartupString1[] );

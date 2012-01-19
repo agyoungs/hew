@@ -26,12 +26,17 @@ void A2DInterrupt(void){
 }
 
 void UART0TransmitInterrupt(void){
+	if(tx_buf_s.buf_i != 0){
+		u0tb = tx_buf_s.buf[buf_i];
+		buf_i--;
+	}
 }
 
 void DMA0Interrupt(void){
 }
 
 void UART0ReceiveInterrupt(void){
+	rx_buf_s.buf[buf_i++] = u0rb;
 }
 
 void TimerA1Interrupt(void){
