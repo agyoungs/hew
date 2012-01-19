@@ -56,29 +56,34 @@ void lcd_puts(unsigned char position, _far const char * string){
 	/* Set line position if needed. We don't want to if we don't need 
 	   to because LCD control operations take longer than LCD data
 	   operations. */
-	if( next_pos != position)
-	{
-		if(position < LCD_LINE2)
-		{
+	if( next_pos != position){
+		if(position < LCD_LINE2){
 			/* Display on Line 1 */
 		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1 + position) );
 		}
-		else
-		{
+		else{
 			/* Display on Line 2 */
 		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2 + position - LCD_LINE2) );
 		}
 		next_pos = position;		// set position index to known value
 	}
-
-	do
-	{
+	do{
 		LCD_write(DATA_WR,*string++);
 		next_pos++;				// increment position index
 	}
 	while(*string);
+}
 
-
+void lcd_write_fb(struct lcd_fb_t* fb){
+	int i;
+	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1));
+	for(i = 0; i < 8; i++){
+		LCD_write(DATA_WR, fb->line1[i]);
+	}
+	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2));
+	for(i = 0; i < 8; i++){
+		LCD_write(DATA_WR, fb->line2[i]);
+	}
 }
 
 void LCD_write(unsigned char data_or_ctrl, unsigned char value){

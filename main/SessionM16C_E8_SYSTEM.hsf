@@ -129,7 +129,7 @@
 "{WK_TB00000007_DEBUG}" "TOOLBAR 0" 59419 1 2 "0.00" 0 0 0 0 0 18 0 "" "0.0" 
 "{WK_TB00000008_DEBUGRUN}" "TOOLBAR 0" 59419 1 3 "0.00" 0 0 0 0 0 18 0 "" "0.0" 
 "{WK_TB00000009_VERSIONCONTROL}" "TOOLBAR 0" 59419 1 5 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
-"{WK_TB00000011_CPU}" "TOOLBAR 0" 59419 1 5 "0.00" 0 0 0 0 0 18 0 "" "0.0" 
+"{WK_TB00000011_CPU}" "TOOLBAR 0" 59419 1 6 "0.00" 0 0 0 0 0 18 0 "" "0.0" 
 "{WK_TB00000012_MAP}" "TOOLBAR 0" 59419 1 6 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
 "{WK_TB00000013_SYMBOL}" "TOOLBAR 0" 59419 1 9 "0.00" 0 0 0 0 0 18 0 "" "0.0" 
 "{WK_TB00000014_CODE}" "TOOLBAR 0" 59419 2 2 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
@@ -219,14 +219,16 @@
 "{WK_TB00000028_RTOSDEBUG}" "TOOLBAR 0" 59419 2 1 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
 "{WK_TB00000029_SYSTEMTOOL}" "TOOLBAR 0" 59419 2 3 "0.00" 0 0 0 0 0 17 0 "" "0.0" 
 [WINDOW_Z_ORDER]
-"C:\cygwin\home\root\git\hew\main\Interrupts.c" 
-"C:\cygwin\home\root\git\hew\main\LCD.h" 
-"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 
-"C:\cygwin\home\root\git\hew\main\MCUInit.c" 
-"C:\cygwin\home\root\git\hew\main\LCD.c" 
 "C:\cygwin\home\root\git\hew\main\QSK62P.c" 
-"C:\cygwin\home\root\git\hew\main\proto.h" 
 "C:\cygwin\home\root\git\hew\main\extern.h" 
+"C:\cygwin\home\root\git\hew\main\proto.h" 
+"C:\cygwin\home\root\git\hew\main\sfr62p.h" 
+"C:\cygwin\home\root\git\hew\main\LCD.c" 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" 
+"C:\cygwin\home\root\git\hew\main\LCD.h" 
+"C:\cygwin\home\root\git\hew\main\nc_define.inc" 
+"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 
 [TARGET_NAME]
 "M16C E8 SYSTEM" "" 0 
 [STATUSBAR_STATEINFO_VD1]

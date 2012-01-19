@@ -23,11 +23,8 @@ void gpio_init(void){
 void timer_init(void){
    	/* turn off interrupts before modifying Interrupt Priority Level */
 	DISABLE_IRQ	        
-	/* Set TB0in & TB1in pins as inputs */
-	prc2=1;
-	pd9=0xfc;
-	prc2 =0;
-   	tb0mr = 0x4a; 
+   	tb0mr = 0x00;
+	/*0b01000000
   			/*  01001010   
       		b1:b0	TMOD1,TMOD0		PULSE MEASUREMENT MODE
      		b3:b2	MR1,MR0			PULSE WIDTH MODE   
@@ -36,20 +33,56 @@ void timer_init(void){
      		b7:b6	TCK1,TCK0		F DIVIDED BY 8 SELECTED */
 	 /* set the interrupt priority level */
     tb0ic = 0x03;
-	tb1mr = 0x46; 
-  			/*  01000110
-      		b1:b0	TMOD1,TMOD0		PULSE MEASUREMENT MODE
-     		b3:b2	MR1,MR0			PULSE WIDTH MODE   
-      		b4		MR2				0 FOR PULSE MEASUREMENT
-      		b5		MR3		        OVERFLOW FLAG 
-     		b7:b6	TCK1,TCK0		F DIVIDED BY 8 SELECTED */
-   	/* turn on interrupts */
 	ENABLE_IRQ
-	/* start timers counting */  
+	tb0 = 96;
    	tb0s = 1;    
    	tb1s = 1;    
 }
- 
+
+void adc_init(void){
+		/* AN0 input, one shot mode, soft trigger, fAD/2 */
+	adcon0 = 0x80;
+		/*10000000
+	   	b2:b0	CH2:CH0		Analog input select bit            	 
+        b4:b3	MD1,MD0		A/D operation mode select bits   
+        b5		TRG			Trigger select bit   
+        b6		ADST		A/D conversion start flag
+        b7		CKS0		Frequency select bit 0
+		*/
+	/* 10-bit mode, fAD/2, Vref connected */
+	adcon1 = 0x28;
+		/*  00111000
+        b1:b0	SCAN1:0		A/D sweep pin select bits           
+        b2		MD2			A/D operation mode select bit 1      
+        b3		BITS		8/10 bit mode select bit             
+        b4		CKS1		Frequency select bit 1               
+        b5		VCUT		Vref connect bit                     
+        b7:b6	OPA1:OPA0	External op-amp connection mode bitS
+		*/  
+	/* Sample and hold enabled, fAD/2 */
+	adcon2 = 0x01;
+		/*   00000001
+        b0		SMP				AD conversion method select bit      
+        b2:b1	ADSEL1:ADSEL0	Analog Input Port select bits        
+        b3			       	 	Reserved
+		b4		CKS2			Frequency select bit 2
+        b7:b5					Reserved                                     
+		*/
+
+	/* disable interrupts before setting interrupt control registers */
+    _asm ("fclr i");
+	/* Enable the ADC interrupt */
+	adic = 0x01;
+		/*      00000001	 Enable the ADC interrupt with priority = 1
+        b3:b0 	ILV2:ILV0		Interrupt priority select bits 0
+		b4      IR				Interrupt Request Bit			 	
+		b7:b5					Reserved
+		*/
+	/* globally enable interrupts */
+    _asm ("fset i");
+ 	/* Start a conversion here */
+    adst = 1;
+}
 void cpu_init(void)
 {
 	unsigned int count = 40000;

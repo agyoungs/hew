@@ -1,3 +1,4 @@
+#include "extern.h"
 /***********************************************************************/
 /*                                                                     */
 /*  DATE        :Mon, Mar 23, 2009                                     */
@@ -11,8 +12,7 @@
 /*  All rights reserved.											   */
 /*                                                                     */
 /***********************************************************************/
-
-
+void lcd_write_fb(struct lcd_fb* fb);
 void A2DInit(void);
 void lcd_init(char far StartupString1[] );
 void lcd_puts(unsigned char position, _far const char * string);
