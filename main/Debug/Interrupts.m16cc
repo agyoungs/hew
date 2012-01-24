@@ -1,7 +1,7 @@
--I"C:\cygwin\home\m\git\hew\main\..\Common"
--I"C:\cygwin\home\m\git\hew\main"
--I"C:\cygwin\home\m\git\hew\..\Common"
+-I"C:\cygwin\home\root\git\hew\main\..\Common"
+-I"C:\cygwin\home\root\git\hew\main"
+-I"C:\cygwin\home\root\git\hew\..\Common"
 -c
 -finfo
--dir "C:\cygwin\home\m\git\hew\main\Debug"
-"C:\cygwin\home\m\git\hew\main\Interrupts.c"
+-dir "C:\cygwin\home\root\git\hew\main\Debug"
+"C:\cygwin\home\root\git\hew\main\Interrupts.c"

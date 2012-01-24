@@ -1,7 +1,7 @@
 ##########################################
 # (1) LINK INFORMATION                   #
 ##########################################
-c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:\cygwin\home\m\git\hew\main\Debug\main.m16cl
+c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:\cygwin\home\root\git\hew\main\Debug\main.m16cl
 
 # ID CODE DATA
 .ID  "#FFFFFFFFFFFFFF"
@@ -10,65 +10,29 @@ c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:\cygwi
 .PROTECT  FFH
 
 # LINK FILE INFORMATION
-ncrt0 (C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30)
-	Jan 19 13:16:25 2012
+ncrt0 (C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30)
+	Jan 24 00:29:34 2012
 
-Interrupts (C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30)
-	Jan 19 13:16:23 2012
+Interrupts (C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30)
+	Jan 24 00:29:33 2012
 
-LCD (C:\cygwin\home\m\git\hew\main\Debug\LCD.r30)
-	Jan 19 13:16:24 2012
+LCD (C:\cygwin\home\root\git\hew\main\Debug\LCD.r30)
+	Jan 24 00:29:33 2012
 
-MCUInit (C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30)
-	Jan 19 13:16:24 2012
+MCUInit (C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30)
+	Jan 24 00:29:33 2012
 
-QSK62P (C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30)
-	Jan 19 13:16:25 2012
+QSK62P (C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30)
+	Jan 24 00:29:34 2012
 
-uart (C:\cygwin\home\m\git\hew\main\Debug\uart.r30)
-	Jan 19 13:16:25 2012
+uart (C:\cygwin\home\root\git\hew\main\Debug\uart.r30)
+	Jan 24 00:29:34 2012
 
-_f8add (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:40 2007
-
-_f8ge (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:40 2007
-
-_f8mul (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:41 2007
-
-_f8sub (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:41 2007
-
-_f8toi4u (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:42 2007
-
-_ftol (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:42 2007
-
-_i4divu (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:42 2007
-
-_i4modu (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
+_i4modu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
 	Nov  8 18:36:43 2007
 
-_i4mulu (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:43 2007
-
-_i4utof8 (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:43 2007
-
-_ltof (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:44 2007
-
-mdata (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
+mdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
 	Nov  8 18:36:57 2007
-
-_f8ltor (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:41 2007
-
-_f8rtol (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
-	Nov  8 18:36:41 2007
 
 
 ##########################################
@@ -82,72 +46,63 @@ bss_SO                           REL DATA    000480 000000       ncrt0
 data_NE                          REL DATA    000480 000000 2     ncrt0
                                  REL DATA    000480 000010 2     mdata
 bss_NE                           REL DATA    000490 000000 2     ncrt0
-                                 REL DATA    000490 000016 2     QSK62P
-                                 REL DATA    0004A6 000008 2     mdata
-data_NO                          REL DATA    0004AE 000000       ncrt0
-                                 REL DATA    0004AE 000001       LCD
-bss_NO                           REL DATA    0004AF 000000       ncrt0
-stack                            REL DATA    0004B0 000600 2     ncrt0
-heap                             REL DATA    000AB0 000300       ncrt0
+                                 REL DATA    000490 00002C 2     QSK62P
+                                 REL DATA    0004BC 000008 2     mdata
+data_NO                          REL DATA    0004C4 000000       ncrt0
+                                 REL DATA    0004C4 000001       LCD
+bss_NO                           REL DATA    0004C5 000000       ncrt0
+                                 REL DATA    0004C5 000082       QSK62P
+stack                            REL DATA    000548 000600 2     ncrt0
+heap                             REL DATA    000B48 000300       ncrt0
 rom_NE                           ABS ROMDATA 00F000 000000       ncrt0
 rom_NO                           REL ROMDATA 00F000 000000       ncrt0
 rom_FE                           ABS ROMDATA 0F4000 000000       ncrt0
 rom_FO                           REL ROMDATA 0F4000 000000       ncrt0
-                                 REL ROMDATA 0F4000 000012       LCD
-                                 REL ROMDATA 0F4012 000009       QSK62P
-data_SEI                         REL ROMDATA 0F401C 000000 2     ncrt0
-data_SOI                         REL ROMDATA 0F401C 000000       ncrt0
-data_NEI                         REL ROMDATA 0F401C 000000 2     ncrt0
-                                 REL ROMDATA 0F401C 000010       mdata
-data_NOI                         REL ROMDATA 0F402C 000000       ncrt0
-                                 REL ROMDATA 0F402C 000001       LCD
-program                          REL CODE    0F402E 000000 2     ncrt0
-                                 REL CODE    0F402E 000059 2     Interrupts
-                                 REL CODE    0F4088 00084F 2     LCD
-                                 REL CODE    0F48D8 0000B7 2     MCUInit
-                                 REL CODE    0F4990 000062 2     QSK62P
-                                 REL CODE    0F49F2 00091B 2     _f8add
-                                 REL CODE    0F530E 0000A7 2     _f8ge
-                                 REL CODE    0F53B6 0002C7 2     _f8mul
-                                 REL CODE    0F567E 000028 2     _f8sub
-                                 REL CODE    0F56A6 000025 2     _f8toi4u
-                                 REL CODE    0F56CC 000111 2     _ftol
-                                 REL CODE    0F57DE 00004D 2     _i4divu
-                                 REL CODE    0F582C 00004B 2     _i4modu
-                                 REL CODE    0F5878 00001C 2     _i4mulu
-                                 REL CODE    0F5894 000022 2     _i4utof8
-                                 REL CODE    0F58B6 0000D4 2     _ltof
-                                 REL CODE    0F598A 000054 2     _f8ltor
-                                 REL CODE    0F59DE 000041 2     _f8rtol
-interrupt                        REL CODE    0F5A20 000000 2     ncrt0
-                                 REL CODE    0F5A20 0000A7       ncrt0
-program_S                        REL CODE    0F5AC8 000000 2     ncrt0
+                                 REL ROMDATA 0F4000 000009       LCD
+                                 REL ROMDATA 0F4009 000022       MCUInit
+                                 REL ROMDATA 0F402B 000011       QSK62P
+data_SEI                         REL ROMDATA 0F403C 000000 2     ncrt0
+data_SOI                         REL ROMDATA 0F403C 000000       ncrt0
+data_NEI                         REL ROMDATA 0F403C 000000 2     ncrt0
+                                 REL ROMDATA 0F403C 000010       mdata
+data_NOI                         REL ROMDATA 0F404C 000000       ncrt0
+                                 REL ROMDATA 0F404C 000001       LCD
+program                          REL CODE    0F404E 000000 2     ncrt0
+                                 REL CODE    0F404E 000067 2     Interrupts
+                                 REL CODE    0F40B6 0002E9 2     LCD
+                                 REL CODE    0F43A0 0000DE 2     MCUInit
+                                 REL CODE    0F447E 000095 2     QSK62P
+                                 REL CODE    0F4514 0001A0 2     uart
+                                 REL CODE    0F46B4 00004B 2     _i4modu
+interrupt                        REL CODE    0F4700 000000 2     ncrt0
+                                 REL CODE    0F4700 0000A7       ncrt0
+program_S                        REL CODE    0F47A8 000000 2     ncrt0
 vector                           ABS ROMDATA 0FFD00 000100       ncrt0
 fvector                          ABS ROMDATA 0FFFDC 000024       ncrt0
 # Total -------------------------------------------------------------------
-                                     DATA           00092F(0002351) Byte(s)
-                                     ROMDATA        000150(0000336) Byte(s)
-                                     CODE           001A98(0006808) Byte(s)
+                                     DATA           0009C7(0002503) Byte(s)
+                                     ROMDATA        000171(0000369) Byte(s)
+                                     CODE           000758(0001880) Byte(s)
 
 ##########################################
 # (3) GLOBAL LABEL INFORMATION           #
 ##########################################
-$BNSPutch          0f4138  $LCD_write         0f424c  $_f8ltor           0f598a
-$_f8rtol           0f59de  $_ftol             0f56cc  $_ltof             0f58b6
-$exit              0f5ac4  $lcd_puts          0f4190  $lcd_write_fb      0f41ee
-_A2DInterrupt      0f402e  _BNSPrintf         0f4328  _DMA0Interrupt     0f4040
-_DisplayDelay      0f42fa  _KeyBoardInterru   0f4070  _RTCInterrupt      0f407c
-_TimerA1Interrup   0f404c  _TimerA2Interrup   0f4052  _TimerB0Interrup   0f4058
-_UART0ReceiveInt   0f4046  _UART0TransmitIn   0f403a  _WakeUpInterrupt   0f4076
-_WatchDogInterru   0f4082  __f8add            0f49f2  __f8ge             0f530e
-__f8mul            0f53b6  __f8sub            0f567e  __f8toi4U          0f56a6
-__i4Utof8          0f5894  __i4divU           0f57de  __i4modU           0f582c
-__i4mulU           0f5878  __memt             000488  __mnext            0004a6
-__msize            0004aa  __pool             000480  _adc_init          0f4908
-_adc_reg           000494  _cpu_init          0f4922  _exit              0f5ac4
-_fb0               000496  _gpio_init         0f48d8  _lcd_init          0f4088
-_main              0f4990  _ticks             000490  _timer_init        0f48ee
-_uart_init         0f4966  dummy_int          0f5ac6  start              0f5a20
+$BNSPutch          0f4348  $LCD_write         0f426c  $exit              0f47a4
+$itoa              0f45ac  $lcd_puts          0f420e  $lcd_write_fb      0f41a6
+$sput_i            0f45e6  $sput_ip1          0f462e  $uart_putc_direc   0f4514
+$uart_putsn        0f4580  $write_to_fb       0f4142  $write_to_fb_pos   0f4174
+_A2DInterrupt      0f404e  _DMA0Interrupt     0f4066  _DisplayDelay      0f431a
+_KeyBoardInterru   0f40a4  _TimerA1Interrup   0f4080  _TimerA2Interrup   0f4086
+_TimerB0Interrup   0f408c  _UART0ReceiveInt   0f406c  _UART0TransmitIn   0f4060
+_WakeUpInterrupt   0f40aa  _WatchDogInterru   0f40b0  __i4modU           0f46b4
+__memt             000488  __mnext            0004bc  __msize            0004c0
+__pool             000480  _adc_init          0f4420  _adc_reg           000494
+_cpu_init          0f443a  _current_fb        0004ba  _exit              0f47a4
+_fb0               000496  _fb1               0004a8  _fb_init           0f43d4
+_gpio_init         0f43a0  _lcd_init          0f40b6  _main              0f447e
+_rx_buf_s          0004c5  _ticks             000490  _timer_init        0f440a
+_tx_buf_s          000506  _uart_init         0f452c  _uart_puts         0f4556
+dummy_int          0f47a6  start              0f4700  
 
 ##########################################
 # (4) GLOBAL EQU SYMBOL INFORMATION      #
@@ -161,74 +116,38 @@ __SB__           00000480
 ##########################################
 # (6) LOCAL LABEL INFORMATION            #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
-@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
-@ _f8add ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ge ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8mul ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8sub ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8toi4u ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ftol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4mulu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4utof8 ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ltof ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ltor ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8rtol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
+@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 ##########################################
 # (7) LOCAL EQU SYMBOL INFORMATION       #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
-@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
-@ _f8add ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ge ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8mul ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8sub ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8toi4u ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ftol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4mulu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4utof8 ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ltof ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ltor ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8rtol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
+@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 ##########################################
 # (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
-@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
-@ _f8add ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ge ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8mul ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8sub ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8toi4u ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ftol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4divu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4modu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4mulu ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _i4utof8 ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _ltof ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8ltor ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
-@ _f8rtol ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
+@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 *** Mapping List ***
 
@@ -245,15 +164,15 @@ bss_SO
 data_NE
                                   00000480  0000048f        10   2
 bss_NE
-                                  00000490  000004ad        1e   2
+                                  00000490  000004c3        34   2
 data_NO
-                                  000004ae  000004ae         1   1
+                                  000004c4  000004c4         1   1
 bss_NO
-                                  000004af  000004af         0   1
+                                  000004c5  00000546        82   1
 stack
-                                  000004b0  00000aaf       600   2
+                                  00000548  00000b47       600   2
 heap
-                                  00000ab0  00000daf       300   1
+                                  00000b48  00000e47       300   1
 rom_NE
                                   0000f000  0000f000         0   1
 rom_NO
@@ -261,21 +180,21 @@ rom_NO
 rom_FE
                                   000f4000  000f4000         0   1
 rom_FO
-                                  000f4000  000f401a        1b   1
+                                  000f4000  000f403b        3c   1
 data_SEI
-                                  000f401c  000f401c         0   2
+                                  000f403c  000f403c         0   2
 data_SOI
-                                  000f401c  000f401c         0   1
+                                  000f403c  000f403c         0   1
 data_NEI
-                                  000f401c  000f402b        10   2
+                                  000f403c  000f404b        10   2
 data_NOI
-                                  000f402c  000f402c         1   1
+                                  000f404c  000f404c         1   1
 program
-                                  000f402e  000f5a1e      19f1   2
+                                  000f404e  000f46fe       6b1   2
 interrupt
-                                  000f5a20  000f5ac6        a7   2
+                                  000f4700  000f47a6        a7   2
 program_S
-                                  000f5ac8  000f5ac8         0   2
+                                  000f47a8  000f47a8         0   2
 vector
                                   000ffd00  000ffdff       100   1
 fvector
@@ -302,153 +221,120 @@ FILE=mdata
                                   00000488         0   none ,g         0
 
 SECTION=bss_NE
-FILE=C:/cygwin/home/m/git/hew/main/QSK62P
-                                  00000490  000004a5        16
+FILE=C:/cygwin/home/root/git/hew/main/QSK62P
+                                  00000490  000004bb        2c
   _ticks
                                   00000490         4   data ,g         0
   _adc_reg
                                   00000494         2   data ,g         0
   _fb0
-                                  00000496        10   data ,g         0
+                                  00000496        12   data ,g         0
+  _fb1
+                                  000004a8        12   data ,g         0
+  _current_fb
+                                  000004ba         2   data ,g         0
 
 FILE=mdata
-                                  000004a6  000004ad         8
+                                  000004bc  000004c3         8
   __mnext
-                                  000004a6         0   none ,g         0
+                                  000004bc         0   none ,g         0
   __msize
-                                  000004aa         0   none ,g         0
+                                  000004c0         0   none ,g         0
+
+SECTION=bss_NO
+FILE=C:/cygwin/home/root/git/hew/main/QSK62P
+                                  000004c5  00000546        82
+  _rx_buf_s
+                                  000004c5        41   data ,g         0
+  _tx_buf_s
+                                  00000506        41   data ,g         0
 
 SECTION=program
-FILE=C:/cygwin/home/m/git/hew/main/Interrupts
-                                  000f402e  000f4086        59
+FILE=C:/cygwin/home/root/git/hew/main/Interrupts
+                                  000f404e  000f40b4        67
   _A2DInterrupt
-                                  000f402e         b   func ,g         0
+                                  000f404e        11   func ,g         0
   _UART0TransmitInterrupt
-                                  000f403a         6   func ,g         0
+                                  000f4060         6   func ,g         0
   _DMA0Interrupt
-                                  000f4040         6   func ,g         0
+                                  000f4066         6   func ,g         0
   _UART0ReceiveInterrupt
-                                  000f4046         6   func ,g         0
+                                  000f406c        14   func ,g         0
   _TimerA1Interrupt
-                                  000f404c         6   func ,g         0
+                                  000f4080         6   func ,g         0
   _TimerA2Interrupt
-                                  000f4052         6   func ,g         0
+                                  000f4086         6   func ,g         0
   _TimerB0Interrupt
-                                  000f4058        19   func ,g         0
+                                  000f408c        19   func ,g         0
   _KeyBoardInterrupt
-                                  000f4070         5   func ,g         0
+                                  000f40a4         5   func ,g         0
   _WakeUpInterrupt
-                                  000f4076         6   func ,g         0
-  _RTCInterrupt
-                                  000f407c         6   func ,g         0
+                                  000f40aa         6   func ,g         0
 
-FILE=C:/cygwin/home/m/git/hew/main/LCD
-                                  000f4088  000f48d6       84f
+FILE=C:/cygwin/home/root/git/hew/main/LCD
+                                  000f40b6  000f439e       2e9
   _lcd_init
-                                  000f4088        b0   func ,g         0
-  $BNSPutch
-                                  000f4138        57   func ,g         0
-  $lcd_puts
-                                  000f4190        5f   func ,g         0
+                                  000f40b6        8c   func ,g         0
+  $write_to_fb
+                                  000f4142        31   func ,g         0
+  $write_to_fb_pos
+                                  000f4174        33   func ,g         0
   $lcd_write_fb
-                                  000f41ee        5e   func ,g         0
+                                  000f41a6        67   func ,g         0
+  $lcd_puts
+                                  000f420e        5f   func ,g         0
   $LCD_write
-                                  000f424c        ae   func ,g         0
+                                  000f426c        ae   func ,g         0
   _DisplayDelay
-                                  000f42fa        2e   func ,g         0
-  _BNSPrintf
-                                  000f4328       5af   func ,g         0
+                                  000f431a        2e   func ,g         0
+  $BNSPutch
+                                  000f4348        57   func ,g         0
 
-FILE=C:/cygwin/home/m/git/hew/main/MCUInit
-                                  000f48d8  000f498e        b7
+FILE=C:/cygwin/home/root/git/hew/main/MCUInit
+                                  000f43a0  000f447d        de
   _gpio_init
-                                  000f48d8        15   func ,g         0
+                                  000f43a0        33   func ,g         0
+  _fb_init
+                                  000f43d4        36   func ,g         0
   _timer_init
-                                  000f48ee        1b   func ,g         0
+                                  000f440a        17   func ,g         0
   _adc_init
-                                  000f4908        19   func ,g         0
-  _cpu_init
-                                  000f4922        45   func ,g         0
-  _uart_init
-                                  000f4966        29   func ,g         0
+                                  000f4420        19   func ,g         0
 
-FILE=C:/cygwin/home/m/git/hew/main/QSK62P
-                                  000f4990  000f49f1        62
+FILE=C:/cygwin/home/root/git/hew/main/QSK62P
+                                  000f447e  000f4512        95
   _main
-                                  000f4990        62   func ,g         0
+                                  000f447e        95   func ,g         0
 
-FILE=_f8add
-                                  000f49f2  000f530c       91b
-  __f8add
-                                  000f49f2       6dd   func ,g         0
-
-FILE=_f8ge
-                                  000f530e  000f53b4        a7
-  __f8ge
-                                  000f530e        a7   func ,g         0
-
-FILE=_f8mul
-                                  000f53b6  000f567c       2c7
-  __f8mul
-                                  000f53b6       2c7   func ,g         0
-
-FILE=_f8sub
-                                  000f567e  000f56a5        28
-  __f8sub
-                                  000f567e        28   func ,g         0
-
-FILE=_f8toi4u
-                                  000f56a6  000f56ca        25
-  __f8toi4U
-                                  000f56a6        25   func ,g         0
-
-FILE=_ftol
-                                  000f56cc  000f57dc       111
-  $_ftol
-                                  000f56cc       111   func ,g         0
-
-FILE=_i4divu
-                                  000f57de  000f582a        4d
-  __i4divU
-                                  000f57de        4d   func ,g         0
+FILE=C:/cygwin/home/root/git/hew/main/uart
+                                  000f4514  000f46b3       1a0
+  $uart_putc_direct
+                                  000f4514        18   func ,g         0
+  _uart_init
+                                  000f452c        29   func ,g         0
+  _uart_puts
+                                  000f4556        2b   func ,g         0
+  $uart_putsn
+                                  000f4580        2b   func ,g         0
+  $itoa
+                                  000f45ac        3b   func ,g         0
+  $sput_i
+                                  000f45e6        48   func ,g         0
+  $sput_ip1
+                                  000f462e        86   func ,g         0
 
 FILE=_i4modu
-                                  000f582c  000f5876        4b
+                                  000f46b4  000f46fe        4b
   __i4modU
-                                  000f582c        4b   func ,g         0
-
-FILE=_i4mulu
-                                  000f5878  000f5893        1c
-  __i4mulU
-                                  000f5878        1c   func ,g         0
-
-FILE=_i4utof8
-                                  000f5894  000f58b5        22
-  __i4Utof8
-                                  000f5894        22   func ,g         0
-
-FILE=_ltof
-                                  000f58b6  000f5989        d4
-  $_ltof
-                                  000f58b6        d4   func ,g         0
-
-FILE=_f8ltor
-                                  000f598a  000f59dd        54
-  $_f8ltor
-                                  000f598a        54   func ,g         0
-
-FILE=_f8rtol
-                                  000f59de  000f5a1e        41
-  $_f8rtol
-                                  000f59de        41   func ,g         0
+                                  000f46b4        4b   func ,g         0
 
 SECTION=interrupt
 FILE=ncrt0
-                                  000f5a20  000f5ac6        a7
+                                  000f4700  000f47a6        a7
   $exit
-                                  000f5ac4         0   none ,g         0
+                                  000f47a4         0   none ,g         0
   _exit
-                                  000f5ac4         0   none ,g         0
+                                  000f47a4         0   none ,g         0
   dummy_int
-                                  000f5ac6         0   none ,g         0
+                                  000f47a6         0   none ,g         0
 

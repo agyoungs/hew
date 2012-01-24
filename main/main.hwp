@@ -3,14 +3,14 @@
 [DATABASE_VERSION]
 "2.8" 
 [PROJECT_DETAILS]
-"main" "C:\cygwin\home\m\git\hew\main" "C:\cygwin\home\m\git\hew\main\main.hwp" "M16C" "Renesas M16C Standard" "Application" "" "" 
+"main" "C:\cygwin\home\root\git\hew\main" "C:\cygwin\home\root\git\hew\main\main.hwp" "M16C" "Renesas M16C Standard" "Application" "" "" 
 [INFORMATION]
 "No project information available" 
 [TOOL_CHAIN]
 "Renesas M16C Standard Toolchain" "5.44.00" 
 [CONFIGURATIONS]
-"Debug" "C:\cygwin\home\m\git\hew\main\Debug" 
-"Release" "C:\cygwin\home\m\git\hew\main\Release" 
+"Debug" "C:\cygwin\home\root\git\hew\main\Debug" 
+"Release" "C:\cygwin\home\root\git\hew\main\Release" 
 [BUILD_PHASES]
 "Renesas M16C Assembler" 1 
 "Renesas M16C C Compiler" 1 
@@ -109,13 +109,13 @@
 "Relocatable file" "Renesas M16C Linker" "Renesas M16C Assembler" 
 "Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
 [PROJECT_FILES]
-"C:\cygwin\home\m\git\hew\main\Interrupts.c" "User" "C source file" 2 
-"C:\cygwin\home\m\git\hew\main\LCD.c" "User" "C source file" 2 
-"C:\cygwin\home\m\git\hew\main\MCUInit.c" "User" "C source file" 2 
-"C:\cygwin\home\m\git\hew\main\QSK62P+ Schematic.pdf" "User" "Documentation" 2 
-"C:\cygwin\home\m\git\hew\main\QSK62P.c" "User" "C source file" 2 
-"C:\cygwin\home\m\git\hew\main\ncrt0.a30" "User" "Assembly source file" 2 
-"C:\cygwin\home\m\git\hew\main\uart.c" "User" "C source file" 2 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" "User" "C source file" 2 
+"C:\cygwin\home\root\git\hew\main\LCD.c" "User" "C source file" 2 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" "User" "C source file" 2 
+"C:\cygwin\home\root\git\hew\main\QSK62P+ Schematic.pdf" "User" "Documentation" 2 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" "User" "C source file" 2 
+"C:\cygwin\home\root\git\hew\main\ncrt0.a30" "User" "Assembly source file" 2 
+"C:\cygwin\home\root\git\hew\main\uart.c" "User" "C source file" 2 
 [FOLDER]
 "Assembly source file" "Assembly source file" 
 "C source file" "C source file" 
@@ -125,20 +125,20 @@
 [ON_DEMAND_COMPONENTS_LOADED]
 [SYNC_SESSION_NAMES]
 [SESSIONS]
-"DefaultSession" "C:\cygwin\home\m\git\hew\main\DefaultSession.hsf" 0 
-"SessionM16C_E8_SYSTEM" "C:\cygwin\home\m\git\hew\main\SessionM16C_E8_SYSTEM.hsf" 0 
+"DefaultSession" "C:\cygwin\home\root\git\hew\main\DefaultSession.hsf" 0 
+"SessionM16C_E8_SYSTEM" "C:\cygwin\home\root\git\hew\main\SessionM16C_E8_SYSTEM.hsf" 0 
 [GENERAL_DATA_SESSION_DefaultSession]
 [GENERAL_DATA_SESSION_SessionM16C_E8_SYSTEM]
 [OPTIONS_Debug_Renesas M16C Assembler]
 "Assembly source file" "0aa78547796f9c10" 2 
-"C:\cygwin\home\m\git\hew\main\ncrt0.a30" "0aa78547796f9c10" 2 
+"C:\cygwin\home\root\git\hew\main\ncrt0.a30" "0aa78547796f9c10" 2 
 [OPTIONS_Debug_Renesas M16C C Compiler]
 "C source file" "0a906547796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\Interrupts.c" "0a906547796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\LCD.c" "0a906547796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\MCUInit.c" "0a906547796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\QSK62P.c" "0a906547796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\uart.c" "0685f6a5ba6dcc10" 1 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" "0a906547796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\LCD.c" "0a906547796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" "0a906547796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" "0a906547796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\uart.c" "0685f6a5ba6dcc10" 1 
 [OPTIONS_Debug_Renesas M16C Configurator]
 "Single Shot" "0685f6a5ba6dcc10" 6 
 [OPTIONS_Debug_Renesas M16C ConfiguratorR8C]
@@ -159,18 +159,18 @@
 "[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 5 
 [EXCLUDED_FILES_Debug]
 [LINKAGE_ORDER_Debug]
-"C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30" 
+"C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30" 
 [GENERAL_DATA_CONFIGURATION_Debug]
 [OPTIONS_Release_Renesas M16C Assembler]
 "Assembly source file" "07292047796f9c10" 2 
-"C:\cygwin\home\m\git\hew\main\ncrt0.a30" "07292047796f9c10" 2 
+"C:\cygwin\home\root\git\hew\main\ncrt0.a30" "07292047796f9c10" 2 
 [OPTIONS_Release_Renesas M16C C Compiler]
 "C source file" "07292047796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\Interrupts.c" "07292047796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\LCD.c" "07292047796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\MCUInit.c" "07292047796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\QSK62P.c" "07292047796f9c10" 1 
-"C:\cygwin\home\m\git\hew\main\uart.c" "0685f6a5ba6dcc10" 1 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" "07292047796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\LCD.c" "07292047796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" "07292047796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" "07292047796f9c10" 1 
+"C:\cygwin\home\root\git\hew\main\uart.c" "0685f6a5ba6dcc10" 1 
 [OPTIONS_Release_Renesas M16C Configurator]
 "Single Shot" "0685f6a5ba6dcc10" 6 
 [OPTIONS_Release_Renesas M16C ConfiguratorR8C]
@@ -191,7 +191,7 @@
 "[V|VERSION|1] [S|OUTPUT|OBJECTCODE] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|INSPECTOR|1] " 1 
 [EXCLUDED_FILES_Release]
 [LINKAGE_ORDER_Release]
-"C:\cygwin\home\m\git\hew\main\Release\ncrt0.r30" 
+"C:\cygwin\home\root\git\hew\main\Release\ncrt0.r30" 
 [GENERAL_DATA_CONFIGURATION_Release]
 [GENERAL_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
 [SESSION_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]

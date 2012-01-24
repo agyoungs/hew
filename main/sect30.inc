@@ -200,8 +200,8 @@ data_FOI_top:
 		.glb 	_TimerB0Interrupt
 		.lword	_TimerB0Interrupt
 
-		.glb 	_RTCInterrupt
-		.lword	_RTCInterrupt	; Timer B1					(vector 27)
+		;.glb 	_tb1_
+		.lword	dummy_int	; Timer B1					(vector 27)
 		
 		.lword	dummy_int		; vector 28  (for user) timer B2
 		.lword	dummy_int		; vector 29  (for user) int0

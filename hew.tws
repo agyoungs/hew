@@ -7,25 +7,31 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"C:\cygwin\home\m\git\hew\main\extern.h" 
-"C:\cygwin\home\m\git\hew\main\Interrupts.c" 
-"C:\cygwin\home\m\git\hew\main\LCD.c" 
-"C:\cygwin\home\m\git\hew\main\MCUInit.c" 
-"C:\cygwin\home\m\git\hew\main\ncrt0.a30" 
-"C:\cygwin\home\m\git\hew\main\proto.h" 
-"C:\cygwin\home\m\git\hew\main\QSK62P.c" 
-"C:\cygwin\home\m\git\hew\main\sect30.inc" 
-"C:\cygwin\home\m\git\hew\main\uart.c" 
+"C:\cygwin\home\root\git\hew\main\extern.h" 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" 
+"C:\cygwin\home\root\git\hew\main\LCD.c" 
+"C:\cygwin\home\root\git\hew\main\LCD.h" 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" 
+"C:\cygwin\home\root\git\hew\main\nc_define.inc" 
+"C:\cygwin\home\root\git\hew\main\ncrt0.a30" 
+"C:\cygwin\home\root\git\hew\main\proto.h" 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" 
+"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 
+"C:\cygwin\home\root\git\hew\main\sect30.inc" 
+"C:\cygwin\home\root\git\hew\main\uart.c" 
 [WORKSPACE_FILE_STATES]
-"C:\cygwin\home\m\git\hew\main\Interrupts.c" 22 29 864 399 0 1 
-"C:\cygwin\home\m\git\hew\main\LCD.c" 0 0 860 395 0 0 
-"C:\cygwin\home\m\git\hew\main\MCUInit.c" 132 174 864 399 0 6 
-"C:\cygwin\home\m\git\hew\main\QSK62P.c" 0 0 1004 607 0 2 
-"C:\cygwin\home\m\git\hew\main\extern.h" 66 87 864 399 0 3 
-"C:\cygwin\home\m\git\hew\main\ncrt0.a30" 0 0 864 399 0 7 
-"C:\cygwin\home\m\git\hew\main\proto.h" 88 116 864 399 0 4 
-"C:\cygwin\home\m\git\hew\main\sect30.inc" -4 -30 1004 607 1 8 
-"C:\cygwin\home\m\git\hew\main\uart.c" 110 145 864 399 0 5 
+"C:\cygwin\home\root\git\hew\main\Interrupts.c" -8 -30 1652 724 1 1 
+"C:\cygwin\home\root\git\hew\main\LCD.c" 150 150 1411 501 0 6 
+"C:\cygwin\home\root\git\hew\main\LCD.h" 25 25 1411 461 0 11 
+"C:\cygwin\home\root\git\hew\main\MCUInit.c" 125 125 1321 414 0 5 
+"C:\cygwin\home\root\git\hew\main\QSK62P.c" 0 0 1317 410 0 0 
+"C:\cygwin\home\root\git\hew\main\QSKDefines.h" 0 0 1411 461 0 10 
+"C:\cygwin\home\root\git\hew\main\extern.h" 50 50 1321 414 0 2 
+"C:\cygwin\home\root\git\hew\main\nc_define.inc" 225 225 1411 461 0 9 
+"C:\cygwin\home\root\git\hew\main\ncrt0.a30" 200 200 1411 461 0 8 
+"C:\cygwin\home\root\git\hew\main\proto.h" 100 100 1321 414 0 4 
+"C:\cygwin\home\root\git\hew\main\sect30.inc" 175 175 1411 461 0 7 
+"C:\cygwin\home\root\git\hew\main\uart.c" 75 75 1321 414 0 3 
 [LOADED_PROJECTS]
 "main" 
 [END]

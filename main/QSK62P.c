@@ -1,43 +1,32 @@
 #include "QSKDefines.h"
 #include "proto.h"
 #include "extern.h"
-
+#include <string.h>
 
 /*GLOBE-LULZ*/
 volatile unsigned long ticks;
 volatile unsigned short adc_reg;
-struct lcd_fb fb0;
-extern struct uart_buf rx_buf_s, tx_buf_s;
-
+struct lcd_fb fb0, fb1;
+struct uart_buf rx_buf_s, tx_buf_s;
+struct lcd_fb* current_fb;
 
 void main(void){
 	int nyan = 0;
+	char adc_val[4] = {0,0,0,0};
 	cpu_init();
 	gpio_init();
 	lcd_init("SNYANYAN");
 	uart_init();
 	timer_init();
 	adc_init();
-	fb0.line1[5] = 0x41;
-	fb0.line2[5] = 0x42;
+	current_fb = (struct lcd_fb*)(fb_init());
 	while(1){
-		if(ticks%250000 < 20){
-			lcd_write_fb(&fb0);
-			/*
-			if(nyan == 0){
-				lcd_puts(LCD_LINE1, "~NYANYAN");
-				lcd_puts(LCD_LINE2, "NYANYAN~");
-				nyan = 1;
-			}
-			else{
-				lcd_puts(LCD_LINE1, "NYANYAN~");
-				lcd_puts(LCD_LINE2, "~NYANYAN");
-				nyan = 0;
-			}
-			*/
+		if((ticks%50000) < 20){
+			uart_puts("Stuff: ");
+			itoa(adc_reg, adc_val);
+			uart_putsn(adc_val, 4);
+			uart_putc_direct('\n');
+			adst = 1;
 		}
-		
 	}
 }
-
-

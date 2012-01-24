@@ -18,7 +18,7 @@
 #pragma INTERRUPT KeyBoardInterrupt
 #pragma INTERRUPT DMA0Interrupt
 #pragma INTERRUPT WakeUpInterrupt
-#pragma INTERRUPT RTCInterrupt
+#pragma INTERRUPT tb1_int
 #pragma INTERRUPT WatchDogInterrupt
 
 void A2DInterrupt(void){
@@ -33,17 +33,18 @@ void A2DInterrupt(void){
 }
 
 void UART0TransmitInterrupt(void){
+/*	
 	if(tx_buf_s.buf_i != 0){
-		u0tb = tx_buf_s.buf[buf_i];
-		buf_i--;
-	}
+		u0tb = tx_buf_s.buf[tx_buf_s.buf_i];
+		tx_buf_s.buf_i--;
+	}*/
 }
 
 void DMA0Interrupt(void){
 }
 
 void UART0ReceiveInterrupt(void){
-	rx_buf_s.buf[buf_i++] = u0rb;
+	rx_buf_s.buf[tx_buf_s.buf_i++] = u0rb;
 }
 
 void TimerA1Interrupt(void){
@@ -55,14 +56,16 @@ void TimerA2Interrupt(void){
 void TimerB0Interrupt(void){
 	ticks++;
 }
-
+/*
+void tb1_int(void){
+	p7 ^= 0x10;
+	lcd_write_fb(current_fb);
+}
+*/
 void KeyBoardInterrupt(void){
 }
 
 void WakeUpInterrupt(void){
-}
-
-void RTCInterrupt(void){
 }
 
 void WatchDogInterrupt(void){
