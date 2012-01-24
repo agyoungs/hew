@@ -22,7 +22,14 @@
 #pragma INTERRUPT WatchDogInterrupt
 
 void A2DInterrupt(void){
-	adc_reg = ad0;
+	if(adc_s.index <= 15){
+        adc_s.val[15];
+        adc_s.index = 0;
+    }else{
+        adc_s.val[index] = ad0 & 0x3ff;
+        adc_s.index++;
+        adst = 1;
+    }
 }
 
 void UART0TransmitInterrupt(void){
@@ -46,7 +53,6 @@ void TimerA2Interrupt(void){
 }
 
 void TimerB0Interrupt(void){
-	p8 ^= 0x01;
 	ticks++;
 }
 

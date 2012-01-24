@@ -1,5 +1,10 @@
 #include "extern.h"
 
+struct adc_t{
+    unsigned short val[16];
+    unsigned char index;
+};
+
 struct lcd_fb{
 	char line1[8];
 	char line2[8];
