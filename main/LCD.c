@@ -22,33 +22,35 @@ void lcd_init(char far StartupString1[] ){
 	LCD_write(CTRL_WR,LCD_CLEAR);
 	LCD_write(CTRL_WR,LCD_HOME_L1);
 	lcd_puts(LCD_LINE1, LOGO);
-	BNSPrintf(LCD_FILE_NUM, "\t%8s\n%8s",LOGO, StartupString1);	
-	//DisplayDelay(60);	
 }
 
-void BNSPutch(uint where, char c){
-//  Notes:          Well, don't pass it an index that isn't defined, because you'll mess up memory...
-    uchar result;
-    switch( where ) {
-    case LCD_FILE_NUM:
-		if(c == '\t'){													// inserting a \t in the string to be printed will cause the display to home and clear
-		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1) );
-		}
-		else if(c == '\n'){												// inserting a \n will cause it to go to the start of the second line
-		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2) );
-		}
-		else{
-			LCD_write(DATA_WR,c);
-		}
-        break;
-   case SERIAL_FILE_NUM:
-		while(ti_u0c1 == 0); 			//  puts it in the UART 0 transmit buffer 
-		u0tb = c;			
-        break;
-    default:
-		*(char *)where = c;
-        break;
-    }
+void write_to_fb(_far char* s, struct lcd_fb* fb){
+	int i = 0;
+	while(i < 16){
+		fb->lines[i] = s[i];
+		i++;
+	}		
+}
+
+void write_to_fb_pos(_far char* s, int pos, struct lcd_fb* fb){
+	int i = pos;
+	while(i < 16){
+		fb->lines[i] = s[i];
+		i++;
+	}		
+}
+
+void lcd_write_fb(struct lcd_fb* fb){
+	int i;
+	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1));
+	for(i = 0; i < 8; i++){
+		LCD_write(DATA_WR, fb->lines[i]);
+	}
+	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2));
+	for(i = 0; i < 8; i++){
+		LCD_write(DATA_WR, fb->lines[i+8]);
+	}
+	current_fb = current_fb->next_fb;
 }
 
 void lcd_puts(unsigned char position, _far const char * string){
@@ -72,18 +74,6 @@ void lcd_puts(unsigned char position, _far const char * string){
 		next_pos++;				// increment position index
 	}
 	while(*string);
-}
-
-void lcd_write_fb(struct lcd_fb* fb){
-	int i;
-	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1));
-	for(i = 0; i < 8; i++){
-		LCD_write(DATA_WR, fb->line1[i]);
-	}
-	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2));
-	for(i = 0; i < 8; i++){
-		LCD_write(DATA_WR, fb->line2[i]);
-	}
 }
 
 void LCD_write(unsigned char data_or_ctrl, unsigned char value){
@@ -117,6 +107,33 @@ void DisplayDelay(unsigned long int units){
 	}
 }
 
+
+void BNSPutch(uint where, char c){
+//  Notes:          Well, don't pass it an index that isn't defined, because you'll mess up memory...
+    uchar result;
+    switch( where ) {
+    case LCD_FILE_NUM:
+		if(c == '\t'){													// inserting a \t in the string to be printed will cause the display to home and clear
+		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L1) );
+		}
+		else if(c == '\n'){												// inserting a \n will cause it to go to the start of the second line
+		  	LCD_write(CTRL_WR, (unsigned char)(LCD_HOME_L2) );
+		}
+		else{
+			LCD_write(DATA_WR,c);
+		}
+        break;
+   case SERIAL_FILE_NUM:
+		while(ti_u0c1 == 0); 			//  puts it in the UART 0 transmit buffer 
+		u0tb = c;			
+        break;
+    default:
+		*(char *)where = c;
+        break;
+    }
+}
+
+/*
 unsigned char BNSPrintf(uint where, char * f, ...){
     char        c;
     va_list     ap;
@@ -324,3 +341,4 @@ unsigned char BNSPrintf(uint where, char * f, ...){
 	}
     return retval;
 }
+*/
