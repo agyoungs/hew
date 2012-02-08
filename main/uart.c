@@ -13,7 +13,7 @@ void uart_init(void){
   	u0c0 = 0x10; 		// UART0 transmit/receive control register 1
   	u0c1 = 0x00; 		// UART0 transmit/receive control register 1
   	u0mr = 0x05;		// UART0 transmit/receive mode register, not reversed
-  	u0tb = u2rb;		// clear UART0 receive buffer by reading
+  	u0tb = u0rb;		// clear UART0 receive buffer by reading
   	u0tb = 0;			// clear UART0 transmit buffer
     DISABLE_IRQ			// disable irqs before setting irq registers
 	s0ric = 0x04;		// Enable UART0 receive interrupt, priority level 4	
@@ -75,3 +75,40 @@ if (digit == 0) {
 }
 return string;
 }
+
+
+/*
+void uart_buf_init(void){
+	rx_buf_s.read_index = 0;
+	rx_buf_s.write_index = 0;
+	tx_buf_s.read_index = 0;
+	tx_buf_s.write_index = 0;
+}
+
+void begin_tx(void){
+	if(tx_buf_s.write_index != tx_buf_s.read_index){
+		u0tb = tx_buf_s.buf[tx_buf_s.read_index];
+		tx_buf_s.read_index++;
+	}
+}
+
+void read_from_rx_buf(_far char* s){
+	_far char* str = s;
+	while(rx_buf_s.read_index != rx_buf_s.write_index){
+		rx_buf_s.buf[rx_buf_s.read_index] = *str;
+		str++;
+		rx_buf_s.read_index++;
+	}
+}
+
+void write_to_tx_buf(_far char* s){
+	_far char* str = s;
+	if(!(u0c1&(1<<1))){
+		while(*str){
+			tx_buf_s.buf[tx_buf_s.write_index] = *str;
+			str++;
+			tx_buf_s.write_index++;
+		}
+	}
+}
+*/

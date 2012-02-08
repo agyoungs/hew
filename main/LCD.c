@@ -2,7 +2,7 @@
 #include "proto.h"
 #include "extern.h"
 
-void lcd_init(char far StartupString1[] ){
+void lcd_init(void){
 	int i;
 	// initial port directions
 	prc2=1;							// unprotect as Port 9 is used

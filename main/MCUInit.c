@@ -3,11 +3,13 @@
 #include "extern.h"
 
 void gpio_init(void){
-	p8 &= ~0x01;
-	pd8 |= 0x01;
-	p7 &= ~0x10;
-	pd7 |= 0x10;
+	p8 &= ~0xff;
+	pd8 = 0x01;
+	p7 &= ~0x14;
+	pd7 = 0x14;
 	pd10 &= ~0x01;
+	p3 &= ~0x0f;
+	pd3 = 0x0f;
 }
 
 struct lcd_fb* fb_init(void){
@@ -26,7 +28,7 @@ void timer_init(void){
     tb0ic = 0x03;
 	//ta0
 	ENABLE_IRQ
-	tb0 = 240;
+	tb0 = 24000;
    	tb0s = 1;
 }
 
