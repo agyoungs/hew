@@ -3,12 +3,12 @@
 [DATABASE_VERSION]
 "10.0" 
 [WORKSPACE_DETAILS]
-"hew" "C:\cygwin\home\root\git\hew" "C:\cygwin\home\root\git\hew\hew.hws" "M16C" "Renesas M16C Standard" 
+"hew" "C:\cygwin\home\m\git\hew" "C:\cygwin\home\m\git\hew\hew.hws" "M16C" "Renesas M16C Standard" 
 [SHARED_WORKSPACE_CONTROL_STATUS]
 "" "" "" 
 "" "" "" 
 [PROJECTS]
-"main" "C:\cygwin\home\root\git\hew\main" "C:\cygwin\home\root\git\hew\main\main.hwp" 0 
+"main" "C:\cygwin\home\m\git\hew\main" "C:\cygwin\home\m\git\hew\main\main.hwp" 0 
 [INFORMATION]
 "No workspace information available" 
 [SCRAP]
@@ -21,9 +21,14 @@
 [MAKEFILE_BUILD_INFO]
 "$(WORKSPDIR)\make\$(PROJECTNAME)_$(CONFIGNAME).mak" "" "$(WORKSPDIR)\make" 0 0 0 
 [VD_CONFIGURATION_OPTIONS]
+"ACTIVE_DESKTOP" "0" 
 [VD_CONFIGURATIONS]
+"0" "Default1" "1" 
+"1" "Default2" "1" 
+"2" "Default3" "1" 
+"3" "Default4" "1" 
 [OPTIONS_DEBUG_TAB]
-0 0 0 0 
+0 0 0 1 
 [VCS]
 "" "" "" 0 
 [VCS_PROJECT]

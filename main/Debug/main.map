@@ -1,7 +1,7 @@
 ##########################################
 # (1) LINK INFORMATION                   #
 ##########################################
-c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:\cygwin\home\root\git\hew\main\Debug\main.m16cl
+c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:\cygwin\home\m\git\hew\main\Debug\main.m16cl
 
 # ID CODE DATA
 .ID  "#FFFFFFFFFFFFFF"
@@ -10,28 +10,28 @@ c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:
 .PROTECT  FFH
 
 # LINK FILE INFORMATION
-ncrt0 (C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30)
-	Feb  7 00:06:07 2012
+ncrt0 (C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30)
+	Feb  8 15:20:35 2012
 
-Interrupts (C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30)
-	Feb  7 00:06:06 2012
+Interrupts (C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30)
+	Feb  8 15:20:34 2012
 
-LCD (C:\cygwin\home\root\git\hew\main\Debug\LCD.r30)
-	Feb  7 00:06:06 2012
+LCD (C:\cygwin\home\m\git\hew\main\Debug\LCD.r30)
+	Feb  8 15:20:34 2012
 
-MCUInit (C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30)
-	Feb  7 00:06:07 2012
+MCUInit (C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30)
+	Feb  8 15:20:34 2012
 
-motion (C:\cygwin\home\root\git\hew\main\Debug\motion.r30)
-	Feb  7 00:06:07 2012
+motion (C:\cygwin\home\m\git\hew\main\Debug\motion.r30)
+	Feb  8 15:20:35 2012
 
-QSK62P (C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30)
-	Feb  7 00:06:07 2012
+QSK62P (C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30)
+	Feb  8 15:20:35 2012
 
-uart (C:\cygwin\home\root\git\hew\main\Debug\uart.r30)
-	Feb  7 00:06:07 2012
+uart (C:\cygwin\home\m\git\hew\main\Debug\uart.r30)
+	Feb  8 15:20:35 2012
 
-mdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
+mdata (c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
 	Nov  8 18:36:57 2007
 
 
@@ -46,14 +46,14 @@ bss_SO                           REL DATA    000480 000000       ncrt0
 data_NE                          REL DATA    000480 000000 2     ncrt0
                                  REL DATA    000480 000010 2     mdata
 bss_NE                           REL DATA    000490 000000 2     ncrt0
-                                 REL DATA    000490 0000B4 2     QSK62P
-                                 REL DATA    000544 000008 2     mdata
-data_NO                          REL DATA    00054C 000000       ncrt0
-                                 REL DATA    00054C 000001       LCD
-bss_NO                           REL DATA    00054D 000000       ncrt0
-                                 REL DATA    00054D 000021       QSK62P
-stack                            REL DATA    00056E 000600 2     ncrt0
-heap                             REL DATA    000B6E 000300       ncrt0
+                                 REL DATA    000490 0000B8 2     QSK62P
+                                 REL DATA    000548 000008 2     mdata
+data_NO                          REL DATA    000550 000000       ncrt0
+                                 REL DATA    000550 000001       LCD
+bss_NO                           REL DATA    000551 000000       ncrt0
+                                 REL DATA    000551 000022       QSK62P
+stack                            REL DATA    000574 000600 2     ncrt0
+heap                             REL DATA    000B74 000300       ncrt0
 rom_NE                           ABS ROMDATA 00F000 000000       ncrt0
 rom_NO                           REL ROMDATA 00F000 000000       ncrt0
 rom_FE                           ABS ROMDATA 0F4000 000000       ncrt0
@@ -67,44 +67,45 @@ data_NEI                         REL ROMDATA 0F402C 000000 2     ncrt0
 data_NOI                         REL ROMDATA 0F403C 000000       ncrt0
                                  REL ROMDATA 0F403C 000001       LCD
 program                          REL CODE    0F403E 000000 2     ncrt0
-                                 REL CODE    0F403E 000049 2     Interrupts
-                                 REL CODE    0F4088 0002E9 2     LCD
-                                 REL CODE    0F4372 0000E2 2     MCUInit
-                                 REL CODE    0F4454 00007C 2     motion
-                                 REL CODE    0F44D0 000107 2     QSK62P
-                                 REL CODE    0F45D8 0001A0 2     uart
-interrupt                        REL CODE    0F4778 000000 2     ncrt0
-                                 REL CODE    0F4778 0000A7       ncrt0
-program_S                        REL CODE    0F4820 000000 2     ncrt0
+                                 REL CODE    0F403E 000051 2     Interrupts
+                                 REL CODE    0F4090 0002E9 2     LCD
+                                 REL CODE    0F437A 0000E2 2     MCUInit
+                                 REL CODE    0F445C 00007C 2     motion
+                                 REL CODE    0F44D8 000097 2     QSK62P
+                                 REL CODE    0F4570 0001A0 2     uart
+interrupt                        REL CODE    0F4710 000000 2     ncrt0
+                                 REL CODE    0F4710 0000A7       ncrt0
+program_S                        REL CODE    0F47B8 000000 2     ncrt0
 vector                           ABS ROMDATA 0FFD00 000100       ncrt0
 fvector                          ABS ROMDATA 0FFFDC 000024       ncrt0
 # Total -------------------------------------------------------------------
-                                     DATA           0009EE(0002542) Byte(s)
+                                     DATA           0009F3(0002547) Byte(s)
                                      ROMDATA        000160(0000352) Byte(s)
-                                     CODE           0007E1(0002017) Byte(s)
+                                     CODE           000779(0001913) Byte(s)
 
 ##########################################
 # (3) GLOBAL LABEL INFORMATION           #
 ##########################################
-$BNSPutch          0f431a  $LCD_write         0f423e  $exit              0f481c
-$itoa              0f4670  $lcd_puts          0f41e0  $lcd_write_fb      0f4178
-$sput_i            0f46aa  $sput_ip1          0f46f2  $uart_putc_direc   0f45d8
-$uart_putsn        0f4644  $write_to_fb       0f4114  $write_to_fb_pos   0f4146
-_A2DInterrupt      0f4044  _DMA0Interrupt     0f4050  _DisplayDelay      0f42ec
-_KeyBoardInterru   0f4076  _TimerA1Interrup   0f405c  _TimerA2Interrup   0f4062
-_TimerB0Interrup   0f4068  _UART0ReceiveInt   0f4056  _UART0TransmitIn   0f404a
-_WakeUpInterrupt   0f407c  _WatchDogInterru   0f4082  __memt             000488
-__mnext            000544  __msize            000548  __pool             000480
-_adc_init          0f43f6  _adc_reg           000494  _adc_s             00054d
-_cpu_init          0f4410  _current_fb        000542  _exit              0f481c
-_fb0               00051e  _fb1               000530  _fb_init           0f43aa
-_forward_left      0f4454  _forward_right     0f4496  _gpio_init         0f4372
-_lcd_init          0f4088  _main              0f44d0  _off_all           0f44c4
-_off_left          0f44b8  _off_right         0f44ac  _reverse_left      0f446a
-_reverse_right     0f4480  _rx_buf_s          000496  _tb1_int           0f403e
-_ticks             000490  _timer_init        0f43e0  _tx_buf_s          0004da
-_uart_init         0f45f0  _uart_puts         0f461a  dummy_int          0f481e
-start              0f4778  
+$BNSPutch          0f4322  $LCD_write         0f4246  $exit              0f47b4
+$itoa              0f4608  $lcd_puts          0f41e8  $lcd_write_fb      0f4180
+$sput_i            0f4642  $sput_ip1          0f468a  $uart_putc_direc   0f4570
+$uart_putsn        0f45dc  $write_to_fb       0f411c  $write_to_fb_pos   0f414e
+_A2DInterrupt      0f4044  _DMA0Interrupt     0f4050  _DisplayDelay      0f42f4
+_KeyBoardInterru   0f407e  _TimerA1Interrup   0f4064  _TimerA2Interrup   0f406a
+_TimerB0Interrup   0f4070  _UART0ReceiveInt   0f4056  _UART0TransmitIn   0f404a
+_WakeUpInterrupt   0f4084  _WatchDogInterru   0f408a  __memt             000488
+__mnext            000548  __msize            00054c  __pool             000480
+_adc_init          0f43fe  _adc_reg           000494  _adc_s             000552
+_check_uart        0f4518  _cpu_init          0f4418  _current_fb        000542
+_exit              0f47b4  _fb0               00051e  _fb1               000530
+_fb_init           0f43b2  _forward_left      0f445c  _forward_right     0f449e
+_gpio_init         0f437a  _lcd_init          0f4090  _main              0f44d8
+_mot_pticks        000546  _mot_wait          000544  _off_all           0f44cc
+_off_left          0f44c0  _off_right         0f44b4  _reverse_left      0f4472
+_reverse_right     0f4488  _rx_buf_s          000496  _tb1_int           0f403e
+_ticks             000490  _timer_init        0f43e8  _tx_buf_s          0004da
+_uart_init         0f4588  _uart_puts         0f45b2  _uart_rec          000551
+dummy_int          0f47b6  start              0f4710  
 
 ##########################################
 # (4) GLOBAL EQU SYMBOL INFORMATION      #
@@ -118,38 +119,38 @@ __SB__           00000480
 ##########################################
 # (6) LOCAL LABEL INFORMATION            #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
-@ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
-@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
-@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
+@ motion ( C:\cygwin\home\m\git\hew\main\Debug\motion.r30 )
+@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
+@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 ##########################################
 # (7) LOCAL EQU SYMBOL INFORMATION       #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
-@ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
-@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
-@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
+@ motion ( C:\cygwin\home\m\git\hew\main\Debug\motion.r30 )
+@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
+@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 ##########################################
 # (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
 ##########################################
-@ ncrt0 ( C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30 )
-@ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
-@ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
-@ MCUInit ( C:\cygwin\home\root\git\hew\main\Debug\MCUInit.r30 )
-@ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
-@ QSK62P ( C:\cygwin\home\root\git\hew\main\Debug\QSK62P.r30 )
-@ uart ( C:\cygwin\home\root\git\hew\main\Debug\uart.r30 )
-@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
+@ ncrt0 ( C:\cygwin\home\m\git\hew\main\Debug\ncrt0.r30 )
+@ Interrupts ( C:\cygwin\home\m\git\hew\main\Debug\Interrupts.r30 )
+@ LCD ( C:\cygwin\home\m\git\hew\main\Debug\LCD.r30 )
+@ MCUInit ( C:\cygwin\home\m\git\hew\main\Debug\MCUInit.r30 )
+@ motion ( C:\cygwin\home\m\git\hew\main\Debug\motion.r30 )
+@ QSK62P ( C:\cygwin\home\m\git\hew\main\Debug\QSK62P.r30 )
+@ uart ( C:\cygwin\home\m\git\hew\main\Debug\uart.r30 )
+@ mdata ( c:\program files\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib )
 
 *** Mapping List ***
 
@@ -166,15 +167,15 @@ bss_SO
 data_NE
                                   00000480  0000048f        10   2
 bss_NE
-                                  00000490  0000054b        bc   2
+                                  00000490  0000054f        c0   2
 data_NO
-                                  0000054c  0000054c         1   1
+                                  00000550  00000550         1   1
 bss_NO
-                                  0000054d  0000056d        21   1
+                                  00000551  00000572        22   1
 stack
-                                  0000056e  00000b6d       600   2
+                                  00000574  00000b73       600   2
 heap
-                                  00000b6e  00000e6d       300   1
+                                  00000b74  00000e73       300   1
 rom_NE
                                   0000f000  0000f000         0   1
 rom_NO
@@ -192,11 +193,11 @@ data_NEI
 data_NOI
                                   000f403c  000f403c         1   1
 program
-                                  000f403e  000f4777       73a   2
+                                  000f403e  000f470f       6d2   2
 interrupt
-                                  000f4778  000f481e        a7   2
+                                  000f4710  000f47b6        a7   2
 program_S
-                                  000f4820  000f4820         0   2
+                                  000f47b8  000f47b8         0   2
 vector
                                   000ffd00  000ffdff       100   1
 fvector
@@ -223,8 +224,8 @@ FILE=mdata
                                   00000488         0   none ,g         0
 
 SECTION=bss_NE
-FILE=C:/cygwin/home/root/git/hew/main/QSK62P
-                                  00000490  00000543        b4
+FILE=C:/cygwin/home/m/git/hew/main/QSK62P
+                                  00000490  00000547        b8
   _ticks
                                   00000490         4   data ,g         0
   _adc_reg
@@ -239,23 +240,32 @@ FILE=C:/cygwin/home/root/git/hew/main/QSK62P
                                   000004da        44   data ,g         0
   _current_fb
                                   00000542         2   data ,g         0
+  _mot_wait
+                                  00000544         2   data ,g         0
+  _mot_pticks
+                                  00000546         2   data ,g         0
 
 FILE=mdata
-                                  00000544  0000054b         8
+                                  00000548  0000054f         8
   __mnext
-                                  00000544         0   none ,g         0
-  __msize
                                   00000548         0   none ,g         0
+  __msize
+                                  0000054c         0   none ,g         0
 
 SECTION=bss_NO
-FILE=C:/cygwin/home/root/git/hew/main/QSK62P
-                                  0000054d  0000056d        21
+FILE=ncrt0
+                                  00000551  00000551         0
+  _uart_rec
+                                  00000551         1   data ,g         0
+
+FILE=C:/cygwin/home/m/git/hew/main/QSK62P
+                                  00000551  00000572        22
   _adc_s
-                                  0000054d        21   data ,g         0
+                                  00000552        21   data ,g         0
 
 SECTION=program
-FILE=C:/cygwin/home/root/git/hew/main/Interrupts
-                                  000f403e  000f4086        49
+FILE=C:/cygwin/home/m/git/hew/main/Interrupts
+                                  000f403e  000f408e        51
   _tb1_int
                                   000f403e         5   func ,g         0
   _A2DInterrupt
@@ -265,94 +275,96 @@ FILE=C:/cygwin/home/root/git/hew/main/Interrupts
   _DMA0Interrupt
                                   000f4050         6   func ,g         0
   _UART0ReceiveInterrupt
-                                  000f4056         6   func ,g         0
+                                  000f4056         e   func ,g         0
   _TimerA1Interrupt
-                                  000f405c         6   func ,g         0
+                                  000f4064         6   func ,g         0
   _TimerA2Interrupt
-                                  000f4062         6   func ,g         0
+                                  000f406a         6   func ,g         0
   _TimerB0Interrupt
-                                  000f4068         e   func ,g         0
+                                  000f4070         e   func ,g         0
   _KeyBoardInterrupt
-                                  000f4076         6   func ,g         0
+                                  000f407e         6   func ,g         0
   _WakeUpInterrupt
-                                  000f407c         6   func ,g         0
+                                  000f4084         6   func ,g         0
 
-FILE=C:/cygwin/home/root/git/hew/main/LCD
-                                  000f4088  000f4370       2e9
+FILE=C:/cygwin/home/m/git/hew/main/LCD
+                                  000f4090  000f4378       2e9
   _lcd_init
-                                  000f4088        8c   func ,g         0
+                                  000f4090        8c   func ,g         0
   $write_to_fb
-                                  000f4114        31   func ,g         0
+                                  000f411c        31   func ,g         0
   $write_to_fb_pos
-                                  000f4146        33   func ,g         0
+                                  000f414e        33   func ,g         0
   $lcd_write_fb
-                                  000f4178        67   func ,g         0
+                                  000f4180        67   func ,g         0
   $lcd_puts
-                                  000f41e0        5f   func ,g         0
+                                  000f41e8        5f   func ,g         0
   $LCD_write
-                                  000f423e        ae   func ,g         0
+                                  000f4246        ae   func ,g         0
   _DisplayDelay
-                                  000f42ec        2e   func ,g         0
+                                  000f42f4        2e   func ,g         0
   $BNSPutch
-                                  000f431a        57   func ,g         0
+                                  000f4322        57   func ,g         0
 
-FILE=C:/cygwin/home/root/git/hew/main/MCUInit
-                                  000f4372  000f4453        e2
+FILE=C:/cygwin/home/m/git/hew/main/MCUInit
+                                  000f437a  000f445b        e2
   _gpio_init
-                                  000f4372        38   func ,g         0
+                                  000f437a        38   func ,g         0
   _fb_init
-                                  000f43aa        35   func ,g         0
+                                  000f43b2        35   func ,g         0
   _timer_init
-                                  000f43e0        17   func ,g         0
+                                  000f43e8        17   func ,g         0
   _adc_init
-                                  000f43f6        19   func ,g         0
+                                  000f43fe        19   func ,g         0
 
-FILE=C:/cygwin/home/root/git/hew/main/motion
-                                  000f4454  000f44cf        7c
+FILE=C:/cygwin/home/m/git/hew/main/motion
+                                  000f445c  000f44d7        7c
   _forward_left
-                                  000f4454        16   func ,g         0
+                                  000f445c        16   func ,g         0
   _reverse_left
-                                  000f446a        16   func ,g         0
+                                  000f4472        16   func ,g         0
   _reverse_right
-                                  000f4480        16   func ,g         0
+                                  000f4488        16   func ,g         0
   _forward_right
-                                  000f4496        16   func ,g         0
+                                  000f449e        16   func ,g         0
   _off_right
-                                  000f44ac         c   func ,g         0
+                                  000f44b4         c   func ,g         0
   _off_left
-                                  000f44b8         c   func ,g         0
+                                  000f44c0         c   func ,g         0
   _off_all
-                                  000f44c4         c   func ,g         0
+                                  000f44cc         c   func ,g         0
 
-FILE=C:/cygwin/home/root/git/hew/main/QSK62P
-                                  000f44d0  000f45d6       107
+FILE=C:/cygwin/home/m/git/hew/main/QSK62P
+                                  000f44d8  000f456e        97
   _main
-                                  000f44d0       107   func ,g         0
+                                  000f44d8        40   func ,g         0
+  _check_uart
+                                  000f4518        57   func ,g         0
 
-FILE=C:/cygwin/home/root/git/hew/main/uart
-                                  000f45d8  000f4777       1a0
+FILE=C:/cygwin/home/m/git/hew/main/uart
+                                  000f4570  000f470f       1a0
   $uart_putc_direct
-                                  000f45d8        18   func ,g         0
+                                  000f4570        18   func ,g         0
   _uart_init
-                                  000f45f0        29   func ,g         0
+                                  000f4588        29   func ,g         0
   _uart_puts
-                                  000f461a        2b   func ,g         0
+                                  000f45b2        2b   func ,g         0
   $uart_putsn
-                                  000f4644        2b   func ,g         0
+                                  000f45dc        2b   func ,g         0
   $itoa
-                                  000f4670        3b   func ,g         0
+                                  000f4608        3b   func ,g         0
   $sput_i
-                                  000f46aa        48   func ,g         0
+                                  000f4642        48   func ,g         0
   $sput_ip1
-                                  000f46f2        86   func ,g         0
+                                  000f468a        86   func ,g         0
 
 SECTION=interrupt
 FILE=ncrt0
-                                  000f4778  000f481e        a7
+                                  000f4710  000f47b6        a7
   $exit
-                                  000f481c         0   none ,g         0
+                                  000f47b4         0   none ,g         0
   _exit
-                                  000f481c         0   none ,g         0
+                                  000f47b4         0   none ,g         0
   dummy_int
-                                  000f481e         0   none ,g         0
+                                  000f47b6         0   none ,g         0
 

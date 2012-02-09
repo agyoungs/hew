@@ -13,6 +13,7 @@
 #pragma INTERRUPT WakeUpInterrupt
 #pragma INTERRUPT tb1_int
 #pragma INTERRUPT WatchDogInterrupt
+
 void tb1_int(void){}
 
 void A2DInterrupt(void){
@@ -25,6 +26,7 @@ void DMA0Interrupt(void){
 }
 
 void UART0ReceiveInterrupt(void){
+	uart_rec = u0rb;
 }
 
 void TimerA1Interrupt(void){
