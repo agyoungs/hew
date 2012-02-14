@@ -186,10 +186,12 @@ data_FOI_top:
 
 		.lword	dummy_int		; vector 19  (for user) uart1 transmit
 		.lword	dummy_int		; vector 20  (for user) uart1 receive
-		.lword	dummy_int		; vector 21  (for user) timer A0
+		
+		.glb 	_ta0_int
+		.lword	_ta0_int		; vector 21  (for user) timer A0
 
-		.glb	_TimerA1Interrupt	; vector 22  (for user) timer A1
-		.lword	_TimerA1Interrupt
+		.glb	_ta1_int	; vector 22  (for user) timer A1
+		.lword	_ta1_int
 		
 		.glb	_TimerA2Interrupt
 		.lword	_TimerA2Interrupt
@@ -200,8 +202,8 @@ data_FOI_top:
 		.glb 	_TimerB0Interrupt
 		.lword	_TimerB0Interrupt
 
-		;.glb 	_tb1_
-		.lword	dummy_int	; Timer B1					(vector 27)
+		.glb 	_tb1_int
+		.lword	_tb1_int	; Timer B1					(vector 27)
 		
 		.lword	dummy_int		; vector 28  (for user) timer B2
 		.lword	dummy_int		; vector 29  (for user) int0

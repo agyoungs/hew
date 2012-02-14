@@ -27,7 +27,7 @@
 
 
 /* The special bitmap characters are mapped to display values 0 to 7 */
-#define LOGO		"FUCK OFF"
+#define LOGO		"RAINBOWS"
 
 #define DATA_PORT		p9			// Data bus port
 #define RS_PIN 			p2_0  		// RS Register Select pin

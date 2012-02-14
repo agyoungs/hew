@@ -20,6 +20,9 @@ struct task_t{
 	unsigned long last_ticks;
 };
 
+void both_throttle(float throttle);
+void min_throttle(void);
+void circle(void);
 void write_to_fb_pos(_far char* s, int pos, struct lcd_fb* fb);
 void write_to_fb(_far char* s, struct lcd_fb* fb);
 void lcd_write_fb(struct lcd_fb* fb);
@@ -28,8 +31,6 @@ void lcd_init(void);
 void lcd_puts(unsigned char position, _far const char * string);
 void LCD_write(unsigned char data_or_ctrl, unsigned char value);
 void DisplayDelay(unsigned long int units);
-void BNSPutch(uint where, char c);
-unsigned char BNSPrintf(uint where, char far * f, ...);
 void itoa(int, char *);
 char *sput_i(int, char *);
 char *sput_ip1(int, char *);

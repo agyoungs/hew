@@ -20,28 +20,16 @@
 /*                                                                     */
 /***********************************************************************/
 
+#define PWM_FRAME_LEN 24576 //Frame length in ticks. This equates to 500us. PWM will be handled as a percentage of on time for this interval.
+#define PWM_RESOLUTION 255	//Resolution of PWM, PWM_FRAME_LEN*current_pwm_val/PWM_RESOLUTION = on_time
+#define MIN_THROTTLE 128
+#define uint unsigned int
+#define uchar unsigned char
 
-// These two defines are used to help keep track of which version of code we are running.
-//  Major is incremented when a new feature or function is added.
-//  Minor is incremented when there is a bug fix or attempted fix.
+#define BAUD_RATE 115200
 
-#define MAJOR_REV		1
-#define MINOR_REV		1
-
-// Shorthand stuff... 
-
-#define BIT0			0x01
-#define BIT1			0x02
-#define BIT2			0x04
-#define BIT3			0x08
-#define BIT4			0x10
-#define BIT5			0x20
-#define BIT6			0x40
-#define BIT7			0x80
-
-#define ulong   unsigned long
-#define uint	unsigned int
-#define uchar 	unsigned char
+#define FORWARD 1
+#define REVERSE 0
 
 #define TRUE	1
 #define FALSE	0
@@ -54,6 +42,9 @@
 
 #define ON		TRUE
 #define OFF		FALSE
+
+#define LED_ON		0
+#define LED_OFF		1
 
 #define HIGH 1
 #define LOW 0
@@ -69,11 +60,6 @@
 #define f1_CLK_SPEED	(24000000L)
 #define MS_PER_TICK		1
 
-#define TWO_FIFTY_MS			(250)		// ticks in 250 MS
-#define ONE_HUNDRED_MS			(100)		// ticks in one hundred MS
-#define ONE_SECOND				(10)		// one hundred MS ticks in a second
-
-
 // Serial Port Defines
 #define TX0_PRIORITY_LEVEL                      3
 #define RX0_PRIORITY_LEVEL                      2
@@ -85,8 +71,6 @@
 
 #define TX0_INTERRUPTS_ENABLED                 (s0tic != 0)
 #define RX0_INTERRUPTS_ENABLED                 (s0ric != 0)
-
-#define BAUD_RATE  115200
 
 /* Switches */
 #define	S1 				p8_3 

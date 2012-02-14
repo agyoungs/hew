@@ -15,8 +15,18 @@ void uart_init(void){
   	u0mr = 0x05;		// UART0 transmit/receive mode register, not reversed
   	u0tb = u0rb;		// clear UART0 receive buffer by reading
   	u0tb = 0;			// clear UART0 transmit buffer
+	/*
+	u1brg = (unsigned char)(((f1_CLK_SPEED/16)/BAUD_RATE)-1);	// set UART0 bit rate generator
+  	ucon = 0x00; 		// UART transmit/receive control register 2
+  	u1c0 = 0x10; 		// UART0 transmit/receive control register 1
+  	u1c1 = 0x00; 		// UART0 transmit/receive control register 1
+  	u1mr = 0x05;		// UART0 transmit/receive mode register, not reversed
+  	u1tb = u0rb;		// clear UART0 receive buffer by reading
+  	u1tb = 0;			// clear UART0 transmit buffer
+	*/
     DISABLE_IRQ			// disable irqs before setting irq registers
-	s0ric = 0x04;		// Enable UART0 receive interrupt, priority level 4	
+	s0ric = 0x04;		// Enable UART0 receive interrupt, priority level 4
+	//s1ric = 0x04;
 	ENABLE_IRQ			// Enable all interrupts
   	u0c1 = 0x05; 		// UART0 transmit/receive control register 1
 }

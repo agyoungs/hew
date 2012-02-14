@@ -1,3 +1,7 @@
+extern volatile unsigned int right_pwm_high;
+extern volatile unsigned int left_pwm_high;
+extern volatile unsigned char right_pwm_state;
+extern volatile unsigned char left_pwm_state;
 extern volatile unsigned long ticks;
 extern volatile unsigned short adc_reg;
 extern volatile char uart_rec;
