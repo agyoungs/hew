@@ -26,8 +26,12 @@
 #define uint unsigned int
 #define uchar unsigned char
 
+#define IR_LED 0x80
+#define IR_PORT p3
+#define IR_LED_ON IR_PORT |= IR_LED
+#define IR_LED_OFF IR_PORT &= ~IR_LED
+#define ALL_OUTPUTS 0xff
 #define BAUD_RATE 115200
-
 #define FORWARD 1
 #define REVERSE 0
 
@@ -48,7 +52,7 @@
 
 #define HIGH 1
 #define LOW 0
-
+#define START 1
 #define ENABLE_IRQ   	{_asm(" FSET I");}
 #define DISABLE_IRQ		{_asm(" FCLR I");}
 
@@ -92,6 +96,9 @@
 
 #define LED_ON      	0
 #define LED_OFF     	1
+#define CLED_OFF 		LED1 |= LED_OFF
+#define CLED_ON 		LED1 &= ~LED_OFF
+
 
 // Use these macros for switch inputs. 
 #define ENABLE_SWITCHES {S1_DDR = 0; S2_DDR = 0; S3_DDR = 0;}

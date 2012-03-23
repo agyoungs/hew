@@ -3,6 +3,7 @@
 -MS
 -O "C:\cygwin\home\root\git\hew\main\Debug\main.x30"
 "C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30"
+"C:\cygwin\home\root\git\hew\main\Debug\analog.r30"
 "C:\cygwin\home\root\git\hew\main\Debug\i2c.r30"
 "C:\cygwin\home\root\git\hew\main\Debug\init.r30"
 "C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30"

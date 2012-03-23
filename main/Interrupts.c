@@ -15,6 +15,8 @@
 #pragma INTERRUPT ta1_int
 #pragma INTERRUPT WatchDogInterrupt
 
+#define STOP 0
+
 void ta0_int(void){
 	off_right();
 }
@@ -24,8 +26,8 @@ void ta1_int(void){
 }
 
 void tb1_int(void){
-	ta0s = 0;
-	ta1s = 0;
+	ta0s = STOP;
+	ta1s = STOP;
 
 	ta0 = right_pwm_high;
 	ta1 = left_pwm_high;
@@ -42,10 +44,10 @@ void tb1_int(void){
 		reverse_left();
 	}
 	
-	ta0s = 1;
-	ta1s = 1;
-	ta0os = 1;
-	ta1os = 1;
+	ta0s = START;
+	ta1s = START;
+	ta0os = START;
+	ta1os = START;
 }
 
 void A2DInterrupt(void){
@@ -69,6 +71,10 @@ void TimerA2Interrupt(void){
 
 void TimerB0Interrupt(void){
 	ticks++;
+	if((ad2 > thresh)||(ad3 > thresh))
+		CLED_ON;
+	else
+		CLED_OFF;
 }
 
 void KeyBoardInterrupt(void){
