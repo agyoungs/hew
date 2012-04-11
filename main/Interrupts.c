@@ -14,8 +14,19 @@
 #pragma INTERRUPT ta0_int
 #pragma INTERRUPT ta1_int
 #pragma INTERRUPT WatchDogInterrupt
-
+#pragma INTERRUPT uart2_rx_int
 #define STOP 0
+
+void uart2_rx_int(void){
+	if(u2rb == 'N'){
+		rx_buf_s.index = UART_END;
+	}
+	if(rx_buf_s.index > UART_BSIZE){
+		rx_buf_s.index = UART_END;
+	}
+	rx_buf_s.buf[rx_buf_s.index] = u2rb;
+	rx_buf_s.index++;
+}
 
 void ta0_int(void){
 	off_right();
@@ -28,7 +39,6 @@ void ta1_int(void){
 void tb1_int(void){
 	ta0s = STOP;
 	ta1s = STOP;
-
 	ta0 = right_pwm_high;
 	ta1 = left_pwm_high;
 	if(right_pwm_state){
@@ -43,7 +53,6 @@ void tb1_int(void){
 	else{
 		reverse_left();
 	}
-	
 	ta0s = START;
 	ta1s = START;
 	ta0os = START;

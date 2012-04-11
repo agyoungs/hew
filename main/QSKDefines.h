@@ -31,7 +31,6 @@
 #define IR_LED_ON IR_PORT |= IR_LED
 #define IR_LED_OFF IR_PORT &= ~IR_LED
 #define ALL_OUTPUTS 0xff
-#define BAUD_RATE 115200
 #define FORWARD 1
 #define REVERSE 0
 
@@ -56,14 +55,11 @@
 #define ENABLE_IRQ   	{_asm(" FSET I");}
 #define DISABLE_IRQ		{_asm(" FCLR I");}
 
-// Defines used to configure the Timer 
-// This stuff sets up the timer to run a 1ms tick.
-
-
+#define UART_END 0
 //#define f1_CLK_SPEED	(6000000L)
 #define f1_CLK_SPEED	(24000000L)
 #define MS_PER_TICK		1
-
+#define BAUD 57600
 // Serial Port Defines
 #define TX0_PRIORITY_LEVEL                      3
 #define RX0_PRIORITY_LEVEL                      2

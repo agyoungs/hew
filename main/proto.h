@@ -1,4 +1,5 @@
 #include "extern.h"
+#define UART_BSIZE 64
 
 struct adc_t{
     unsigned short val[16];
@@ -11,15 +12,16 @@ struct lcd_fb{
 };
 
 struct uart_buf{
-	char buf[64];
-	int read_index;
-	int write_index;
+	char buf[UART_BSIZE];
+	int index;
 };
 
 struct task_t{
 	unsigned long last_ticks;
 };
 
+
+void read_from_rx_buf(char* str);
 void calibrate_on(void);
 void calibrate_off(void);
 void update_adc(void);

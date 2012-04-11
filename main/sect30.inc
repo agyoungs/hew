@@ -176,7 +176,8 @@ data_FOI_top:
 		.lword	_A2DInterrupt
 		
 		.lword	dummy_int		; vector 15  (for user) uart2 transmit
-		.lword	dummy_int		; vector 16  (for user) uart2 receive
+		.glb	_uart2_rx_int
+		.lword	_uart2_rx_int		; vector 16  (for user) uart2 receive
 
 		.glb	_UART0TransmitInterrupt
 		.lword	_UART0TransmitInterrupt

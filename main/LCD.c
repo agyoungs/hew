@@ -25,15 +25,6 @@ void cpu_init(void){
 	prc1 = 0;
 }
 
-struct lcd_fb* fb_init(void){
-	int i;
-	fb0.next_fb = &fb1;
-	fb1.next_fb = &fb0;
-	write_to_fb("INITNYANFB  ZERO",&fb0);
-	write_to_fb("INITNYANFB   ONE",&fb1);
-	return &fb0;
-}
-
 void lcd_init(void){
 	int i;
 	// initial port directions
@@ -53,8 +44,17 @@ void lcd_init(void){
 	LCD_write(CTRL_WR,LCD_CURSOR_OFF);
 	LCD_write(CTRL_WR,LCD_CLEAR);
 	LCD_write(CTRL_WR,LCD_HOME_L1);
-	lcd_puts(LCD_LINE2, LOGO);
+	lcd_puts(LCD_LINE2, "        ");
 	lcd_puts(LCD_LINE1, "FABULOUS");
+}
+/*
+struct lcd_fb* fb_init(void){
+	int i;
+	fb0.next_fb = &fb1;
+	fb1.next_fb = &fb0;
+	write_to_fb("INITNYANFB  ZERO",&fb0);
+	write_to_fb("INITNYANFB   ONE",&fb1);
+	return &fb0;
 }
 
 void write_to_fb(_far char* s, struct lcd_fb* fb){
@@ -85,7 +85,7 @@ void lcd_write_fb(struct lcd_fb* fb){
 	}
 	current_fb = current_fb->next_fb;
 }
-
+*/
 void lcd_puts(unsigned char position, _far const char * string){
 	static unsigned char next_pos = 0xFF;
 	/* Set line position if needed. We don't want to if we don't need 
@@ -138,4 +138,41 @@ void DisplayDelay(unsigned long int units){
 		_asm ("NOP");
 		_asm ("NOP");
 	}
+}
+
+void itoa(int integer, char *string)
+{
+if (0 > integer) {
+++integer;
+*string++ = '-';
+*sput_ip1(-integer, string) = '\0';
+} else {
+*sput_i(integer, string) = '\0';
+}
+}
+
+char *sput_i(int integer, char *string)
+{
+if (integer / 10 != 0) {
+string = sput_i(integer / 10, string);
+}
+*string++ = (char)('0' + integer % 10);
+return string;
+}
+
+char *sput_ip1(int integer, char *string)
+{
+int digit;
+
+digit = (integer % 10 + 1) % 10;
+if (integer / 10 != 0) {
+string = (digit == 0 ? sput_ip1 : sput_i)(integer / 10, string);
+*string++ = (char)('0' + digit);
+} else {
+if (digit == 0) {
+*string++ = '1';
+}
+*string++ = (char)('0' + digit);
+}
+return string;
 }

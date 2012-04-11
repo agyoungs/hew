@@ -18,6 +18,7 @@
 "C:\cygwin\home\root\git\hew\main\main.c" 
 "C:\cygwin\home\root\git\hew\main\MCUInit.c" 
 "C:\cygwin\home\root\git\hew\main\motion.c" 
+"C:\cygwin\home\root\git\hew\main\nc_define.inc" 
 "C:\cygwin\home\root\git\hew\main\ncrt0.a30" 
 "C:\cygwin\home\root\git\hew\main\proto.h" 
 "C:\cygwin\home\root\git\hew\main\pwm.c" 
@@ -32,19 +33,20 @@
 "C:\cygwin\home\root\git\hew\main\LCD.h" 150 150 1351 419 0 13 
 "C:\cygwin\home\root\git\hew\main\MCUInit.c" 0 0 1652 632 0 2 
 "C:\cygwin\home\root\git\hew\main\QSKDefines.h" 0 0 1164 419 0 7 
-"C:\cygwin\home\root\git\hew\main\analog.c" -8 -30 1542 632 1 17 
+"C:\cygwin\home\root\git\hew\main\analog.c" 0 0 1542 632 0 17 
 "C:\cygwin\home\root\git\hew\main\extern.h" 100 100 1351 419 0 11 
 "C:\cygwin\home\root\git\hew\main\i2c.c" 50 50 1351 419 0 18 
 "C:\cygwin\home\root\git\hew\main\init.c" 150 150 1461 419 0 5 
-"C:\cygwin\home\root\git\hew\main\main.c" 125 125 1461 419 0 4 
+"C:\cygwin\home\root\git\hew\main\main.c" -8 -30 1542 642 1 4 
 "C:\cygwin\home\root\git\hew\main\motion.c" 75 75 1164 419 0 10 
+"C:\cygwin\home\root\git\hew\main\nc_define.inc" 25 25 1139 404 0 19 
 "C:\cygwin\home\root\git\hew\main\ncrt0.a30" 0 0 1542 632 0 16 
 "C:\cygwin\home\root\git\hew\main\proto.h" 125 125 1164 419 0 12 
 "C:\cygwin\home\root\git\hew\main\pwm.c" 0 0 1164 419 0 15 
 "C:\cygwin\home\root\git\hew\main\sect30.inc" 25 25 1164 419 0 8 
 "C:\cygwin\home\root\git\hew\main\shapes.c" 0 0 1542 632 0 14 
 "C:\cygwin\home\root\git\hew\main\timer.c" 0 0 1542 632 0 9 
-"C:\cygwin\home\root\git\hew\main\uart.c" 25 25 1461 419 0 1 
+"C:\cygwin\home\root\git\hew\main\uart.c" 0 0 831 348 0 1 
 [LOADED_PROJECTS]
 "main" 
 [END]
