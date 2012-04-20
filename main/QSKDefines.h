@@ -26,6 +26,15 @@
 #define uint unsigned int
 #define uchar unsigned char
 
+
+#define RES_MENU_SIZE 10
+#define SHAPE_MENU_SIZE 10
+#define SHAPE_MENU_END 9
+#define RES_SCALE 103
+#define SHAPE_SCALE 103
+#define SONG_SCALE 342
+#define DDELAY 100
+
 #define IR_LED 0x80
 #define IR_PORT p3
 #define IR_LED_ON IR_PORT |= IR_LED

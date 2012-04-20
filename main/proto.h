@@ -20,7 +20,9 @@ struct task_t{
 	unsigned long last_ticks;
 };
 
-
+void res_menu_f(void);
+void shape_menu_f(void);
+void song_menu_f(void);
 void read_from_rx_buf(char* str);
 void calibrate_on(void);
 void calibrate_off(void);

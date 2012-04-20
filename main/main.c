@@ -9,7 +9,9 @@
 #define RPRESS 3
 #define NOPRESS 0
 #define LCDS 8
-#define IC 0
+#define TOO_COOL_FOR_NUMBERS 0
+#define DEFINITELY_NOT_A_MAGIC_NUMBER 1
+
 typedef unsigned char uint8_t;
 
 
@@ -31,16 +33,19 @@ int an_noise;
 int thresh;
 void check_uart(void);
 long delay(long loldelay);
-uint8_t check_buttons(void);
+int check_buttons(void);
 char readbuf[LCDS];
+int state;
+
+
 
 void main(void){
-	//float sin_16[] = {0.38268, 0.70711, 0.92388, .9, 0.92388, 0.70711, 0.38268, 0.00392, -0.38268, -0.70711, -0.92388, -1.0, -0.92388, -0.70711, -0.38268, 0.00392};
-	int i = IC;
+	int index = TOO_COOL_FOR_NUMBERS;
+	state = DEFINITELY_NOT_A_MAGIC_NUMBER;
 	cpu_init();
 	gpio_init();
 	lcd_init();
-	uart_init();
+	//uart_init();
 	timer_init();
 	adc_init();
 	LED0 = LED_OFF;
@@ -50,24 +55,24 @@ void main(void){
 	left_pwm_high = MIN_THROTTLE;
 	right_pwm_state = LED_OFF;
 	left_pwm_state = LED_OFF;
-	IR_LED_ON;	
+	//IR_LED_ON;	
 	while(TRUE){
-		if(check_buttons() == LPRESS){
-			for(i = IC; i < LCDS; i++){
-				readbuf[i] = ' ';
-			}
-			
-			uart_puts("NCSU #1");
-			uart_puts("NCSU #1");
-			read_from_rx_buf(readbuf);
-			lcd_puts(LCD_LINE1, readbuf);
+		state = check_buttons();
+		if(state == LPRESS){
+			res_menu_f();
 		}
-		DisplayDelay(4);
+		if(state == CPRESS){
+			shape_menu_f();
+		}
+		if(state == RPRESS){
+			song_menu_f();
+		}
+		DisplayDelay(DDELAY);
 	}
 }
 
-uint8_t check_buttons(void){
-	uint8_t ret;
+int check_buttons(void){
+	int ret = state;
 	if(!S1){
 		ret = LPRESS;
 	}
@@ -77,11 +82,9 @@ uint8_t check_buttons(void){
 	if(!S3){
 		ret = RPRESS;
 	}
-	if(S1 && S2 && S3){
-		ret = NOPRESS;
-	}
 	return ret;
 }
+
 /*
 IR_LED_ON;
 		if((ad2 > thresh)||(ad3 > thresh))

@@ -1,0 +1,7 @@
+-I"C:\cygwin\home\root\git\hew\main\..\Common"
+-I"C:\cygwin\home\root\git\hew\main"
+-I"C:\cygwin\home\root\git\hew\..\Common"
+-c
+-finfo
+-dir "C:\cygwin\home\root\git\hew\main\Debug"
+"C:\cygwin\home\root\git\hew\main\menus.c"

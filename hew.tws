@@ -17,6 +17,7 @@
 "C:\cygwin\home\root\git\hew\main\LCD.h" 
 "C:\cygwin\home\root\git\hew\main\main.c" 
 "C:\cygwin\home\root\git\hew\main\MCUInit.c" 
+"C:\cygwin\home\root\git\hew\main\menus.c" 
 "C:\cygwin\home\root\git\hew\main\motion.c" 
 "C:\cygwin\home\root\git\hew\main\nc_define.inc" 
 "C:\cygwin\home\root\git\hew\main\ncrt0.a30" 
@@ -37,7 +38,8 @@
 "C:\cygwin\home\root\git\hew\main\extern.h" 100 100 1351 419 0 11 
 "C:\cygwin\home\root\git\hew\main\i2c.c" 50 50 1351 419 0 18 
 "C:\cygwin\home\root\git\hew\main\init.c" 150 150 1461 419 0 5 
-"C:\cygwin\home\root\git\hew\main\main.c" -8 -30 1542 642 1 4 
+"C:\cygwin\home\root\git\hew\main\main.c" 0 0 1542 642 0 4 
+"C:\cygwin\home\root\git\hew\main\menus.c" -8 -30 1355 642 1 20 
 "C:\cygwin\home\root\git\hew\main\motion.c" 75 75 1164 419 0 10 
 "C:\cygwin\home\root\git\hew\main\nc_define.inc" 25 25 1139 404 0 19 
 "C:\cygwin\home\root\git\hew\main\ncrt0.a30" 0 0 1542 632 0 16 

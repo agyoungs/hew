@@ -11,40 +11,43 @@ c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\bin\ln30.exe @C:
 
 # LINK FILE INFORMATION
 ncrt0 (C:\cygwin\home\root\git\hew\main\Debug\ncrt0.r30)
-	Apr 11 07:22:55 2012
+	Apr 20 07:35:41 2012
 
 analog (C:\cygwin\home\root\git\hew\main\Debug\analog.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
 
 i2c (C:\cygwin\home\root\git\hew\main\Debug\i2c.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
 
 init (C:\cygwin\home\root\git\hew\main\Debug\init.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
 
 Interrupts (C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:39 2012
 
 LCD (C:\cygwin\home\root\git\hew\main\Debug\LCD.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
 
 main (C:\cygwin\home\root\git\hew\main\Debug\main.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
+
+menus (C:\cygwin\home\root\git\hew\main\Debug\menus.r30)
+	Apr 20 07:35:41 2012
 
 motion (C:\cygwin\home\root\git\hew\main\Debug\motion.r30)
-	Apr 11 07:22:54 2012
+	Apr 20 07:35:40 2012
 
 pwm (C:\cygwin\home\root\git\hew\main\Debug\pwm.r30)
-	Apr 11 07:22:55 2012
+	Apr 20 07:35:40 2012
 
 shapes (C:\cygwin\home\root\git\hew\main\Debug\shapes.r30)
-	Apr 11 07:22:55 2012
+	Apr 20 07:35:41 2012
 
 timer (C:\cygwin\home\root\git\hew\main\Debug\timer.r30)
-	Apr 11 07:22:55 2012
+	Apr 20 07:35:41 2012
 
 uart (C:\cygwin\home\root\git\hew\main\Debug\uart.r30)
-	Apr 11 07:22:55 2012
+	Apr 20 07:35:41 2012
 
 _f4toi4u (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v544r00\lib30\nc30lib.lib)
 	Nov  8 18:36:39 2007
@@ -74,84 +77,90 @@ bss_SE                           REL DATA    000480 000000 2     ncrt0
 data_SO                          REL DATA    000480 000000       ncrt0
 bss_SO                           REL DATA    000480 000000       ncrt0
 data_NE                          REL DATA    000480 000000 2     ncrt0
-                                 REL DATA    000480 000010 2     mdata
-bss_NE                           REL DATA    000490 000000 2     ncrt0
-                                 REL DATA    000490 0000A2 2     main
-                                 REL DATA    000532 000008 2     mdata
-data_NO                          REL DATA    00053A 000000       ncrt0
-                                 REL DATA    00053A 000001       LCD
-bss_NO                           REL DATA    00053B 000000       ncrt0
-                                 REL DATA    00053B 000024       main
-stack                            REL DATA    000560 000600 2     ncrt0
-heap                             REL DATA    000B60 000300       ncrt0
+                                 REL DATA    000480 000130 2     menus
+                                 REL DATA    0005B0 000010 2     mdata
+bss_NE                           REL DATA    0005C0 000000 2     ncrt0
+                                 REL DATA    0005C0 0000A4 2     main
+                                 REL DATA    000664 000002 2     menus
+                                 REL DATA    000666 000008 2     mdata
+data_NO                          REL DATA    00066E 000000       ncrt0
+                                 REL DATA    00066E 000001       LCD
+bss_NO                           REL DATA    00066F 000000       ncrt0
+                                 REL DATA    00066F 000024       main
+stack                            REL DATA    000694 000600 2     ncrt0
+heap                             REL DATA    000C94 000300       ncrt0
 rom_NE                           ABS ROMDATA 00F000 000000       ncrt0
 rom_NO                           REL ROMDATA 00F000 000000       ncrt0
 rom_FE                           ABS ROMDATA 0F4000 000000       ncrt0
 rom_FO                           REL ROMDATA 0F4000 000000       ncrt0
                                  REL ROMDATA 0F4000 000012       LCD
-                                 REL ROMDATA 0F4012 000008       main
-data_SEI                         REL ROMDATA 0F401A 000000 2     ncrt0
-data_SOI                         REL ROMDATA 0F401A 000000       ncrt0
-data_NEI                         REL ROMDATA 0F401A 000000 2     ncrt0
-                                 REL ROMDATA 0F401A 000010       mdata
-data_NOI                         REL ROMDATA 0F402A 000000       ncrt0
-                                 REL ROMDATA 0F402A 000001       LCD
-program                          REL CODE    0F402C 000000 2     ncrt0
-                                 REL CODE    0F402C 0001D1 2     analog
-                                 REL CODE    0F41FE 000042 2     init
-                                 REL CODE    0F4240 000111 2     Interrupts
-                                 REL CODE    0F4352 000322 2     LCD
-                                 REL CODE    0F4674 0000E1 2     main
-                                 REL CODE    0F4756 00009C 2     motion
-                                 REL CODE    0F47F2 00003D 2     pwm
-                                 REL CODE    0F4830 0000A1 2     shapes
-                                 REL CODE    0F48D2 000037 2     timer
-                                 REL CODE    0F490A 000123 2     uart
-                                 REL CODE    0F4A2E 000025 2     _f4toi4u
-                                 REL CODE    0F4A54 000111 2     _ftol
-                                 REL CODE    0F4B66 0000B0 2     _f4muls
-                                 REL CODE    0F4C16 000032 2     _f4rets
-                                 REL CODE    0F4C48 00003E 2     _f4rtol
-interrupt                        REL CODE    0F4C86 000000 2     ncrt0
-                                 REL CODE    0F4C86 0000A7       ncrt0
-program_S                        REL CODE    0F4D2E 000000 2     ncrt0
+                                 REL ROMDATA 0F4012 000276       menus
+data_SEI                         REL ROMDATA 0F4288 000000 2     ncrt0
+data_SOI                         REL ROMDATA 0F4288 000000       ncrt0
+data_NEI                         REL ROMDATA 0F4288 000000 2     ncrt0
+                                 REL ROMDATA 0F4288 000130       menus
+                                 REL ROMDATA 0F43B8 000010       mdata
+data_NOI                         REL ROMDATA 0F43C8 000000       ncrt0
+                                 REL ROMDATA 0F43C8 000001       LCD
+program                          REL CODE    0F43CA 000000 2     ncrt0
+                                 REL CODE    0F43CA 0001D1 2     analog
+                                 REL CODE    0F459C 000042 2     init
+                                 REL CODE    0F45DE 000111 2     Interrupts
+                                 REL CODE    0F46F0 000322 2     LCD
+                                 REL CODE    0F4A12 0000A2 2     main
+                                 REL CODE    0F4AB4 00012D 2     menus
+                                 REL CODE    0F4BE2 00007C 2     motion
+                                 REL CODE    0F4C5E 00003D 2     pwm
+                                 REL CODE    0F4C9C 0000A1 2     shapes
+                                 REL CODE    0F4D3E 000037 2     timer
+                                 REL CODE    0F4D76 0000D9 2     uart
+                                 REL CODE    0F4E50 000025 2     _f4toi4u
+                                 REL CODE    0F4E76 000111 2     _ftol
+                                 REL CODE    0F4F88 0000B0 2     _f4muls
+                                 REL CODE    0F5038 000032 2     _f4rets
+                                 REL CODE    0F506A 00003E 2     _f4rtol
+interrupt                        REL CODE    0F50A8 000000 2     ncrt0
+                                 REL CODE    0F50A8 0000A7       ncrt0
+program_S                        REL CODE    0F5150 000000 2     ncrt0
 vector                           ABS ROMDATA 0FFD00 000100       ncrt0
 fvector                          ABS ROMDATA 0FFFDC 000024       ncrt0
 # Total -------------------------------------------------------------------
-                                     DATA           0009DF(0002527) Byte(s)
-                                     ROMDATA        00014F(0000335) Byte(s)
-                                     CODE           000D01(0003329) Byte(s)
+                                     DATA           000B13(0002835) Byte(s)
+                                     ROMDATA        0004ED(0001261) Byte(s)
+                                     CODE           000D85(0003461) Byte(s)
 
 ##########################################
 # (3) GLOBAL LABEL INFORMATION           #
 ##########################################
-$LCD_write         0f4490  $_f4rtol           0f4c48  $_ftol             0f4a54
-$dbg_putc_direct   0f499e  $exit              0f4d2a  $itoa              0f456c
-$lcd_puts          0f4432  $read_from_rx_bu   0f4954  $sput_i            0f45a6
-$sput_ip1          0f45ee  $uart_putc_direc   0f4988  $uart_putsn        0f4a02
-_A2DInterrupt      0f42c8  _DMA0Interrupt     0f42d4  _DisplayDelay      0f453e
-_KeyBoardInterru   0f4340  _TimerA1Interrup   0f42e8  _TimerA2Interrup   0f42ea
-_TimerB0Interrup   0f42f0  _UART0ReceiveInt   0f42da  _UART0TransmitIn   0f42ce
-_WakeUpInterrupt   0f4346  _WatchDogInterru   0f434c  __f4mul            0f4b8a
-__f4retInf         0f4c20  __f4retNaN         0f4c16  __f4retNum         0f4c30
-__f4retZero        0f4c1c  __f4toi4U          0f4a2e  __memt             000488
-__mnext            000532  __msize            000536  __pool             000480
-_adc_init          0f402c  _adc_reg           000498  _adc_s             00053e
-_an_max_off        0004a0  _an_max_on         00049c  _an_min_off        00049e
-_an_min_on         00049a  _an_noise          0004a2  _both_throttle     0f4800
-_calibrate_off     0f411c  _calibrate_on      0f4044  _check_buttons     0f4726
-_cpu_init          0f4352  _dbg_puts          0f49d8  _exit              0f4d2a
-_find_lines        0f4830  _forward_left      0f4756  _forward_right     0f47a4
-_gpio_init         0f41fe  _lcd_init          0f4396  _left_pwm_high     000492
-_left_pwm_state    00053c  _main              0f4674  _min_throttle      0f47f2
-_off_all           0f47de  _off_left          0f47ce  _off_right         0f47be
-_readbuf           00052a  _reverse_left      0f4770  _reverse_right     0f478a
-_right_pwm_high    000490  _right_pwm_state   00053b  _rx_buf_s          0004a6
-_ta0_int           0f426e  _ta1_int           0f4278  _tb1_int           0f4282
-_thresh            0004a4  _ticks             000494  _timer_init        0f48d2
-_tx_buf_s          0004e8  _uart2_rx_int      0f4240  _uart_init         0f490a
-_uart_puts         0f49b6  _uart_rec          00053d  dummy_int          0f4d2c
-start              0f4c86  
+$LCD_write         0f47ea  $_f4rtol           0f506a  $_ftol             0f4e76
+$dbg_putc_direct   0f4dc0  $exit              0f514c  $itoa              0f48c6
+$lcd_puts          0f478c  $read_from_rx_bu   0f4d76  $sput_i            0f4900
+$sput_ip1          0f498c  $uart_putc_direc   0f4daa  $uart_putsn        0f4e24
+_A2DInterrupt      0f4666  _DMA0Interrupt     0f4672  _DisplayDelay      0f4898
+_KeyBoardInterru   0f46de  _TimerA1Interrup   0f4686  _TimerA2Interrup   0f4688
+_TimerB0Interrup   0f468e  _UART0ReceiveInt   0f4678  _UART0TransmitIn   0f466c
+_WakeUpInterrupt   0f46e4  _WatchDogInterru   0f46ea  __f4mul            0f4fac
+__f4retInf         0f5042  __f4retNaN         0f5038  __f4retNum         0f5052
+__f4retZero        0f503e  __f4toi4U          0f4e50  __memt             0005b8
+__mnext            000666  __msize            00066a  __pool             0005b0
+_adc_init          0f43ca  _adc_reg           0005c8  _adc_s             000672
+_an_max_off        0005d0  _an_max_on         0005cc  _an_min_off        0005ce
+_an_min_on         0005ca  _an_noise          0005d2  _both_throttle     0f4c6c
+_calibrate_off     0f44ba  _calibrate_on      0f43e2  _check_buttons     0f4a8c
+_cpu_init          0f4948  _dbg_puts          0f4dfa  _exit              0f514c
+_find_lines        0f4c9c  _forward_left      0f4be2  _forward_right     0f4c24
+_gpio_init         0f459c  _lcd_init          0f46f0  _left_pwm_high     0005c2
+_left_pwm_state    000670  _main              0f4a12  _min_throttle      0f4c5e
+_off_all           0f4c52  _off_left          0f4c46  _off_right         0f4c3a
+_readbuf           00065a  _res_menu          000480  _res_menu_f        0f4ab4
+_reverse_left      0f4bf8  _reverse_right     0f4c0e  _right_pwm_high    0005c0
+_right_pwm_state   00066f  _rx_buf_s          0005d6  _shape_menu        0004d0
+_shape_menu_f      0f4af2  _song              0004f8  _song_menu_f       0f4b4c
+_state             000662  _ta0_int           0f460c  _ta1_int           0f4616
+_tb1_int           0f4620  _thresh            0005d4  _ticks             0005c4
+_timer_init        0f4d3e  _tx_buf_s          000618  _uart2_rx_int      0f45de
+_uart_puts         0f4dd8  _uart_rec          000671  dummy_int          0f514e
+start              0f50a8  
 
 ##########################################
 # (4) GLOBAL EQU SYMBOL INFORMATION      #
@@ -172,6 +181,7 @@ __SB__           00000480
 @ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
 @ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
 @ main ( C:\cygwin\home\root\git\hew\main\Debug\main.r30 )
+@ menus ( C:\cygwin\home\root\git\hew\main\Debug\menus.r30 )
 @ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
 @ pwm ( C:\cygwin\home\root\git\hew\main\Debug\pwm.r30 )
 @ shapes ( C:\cygwin\home\root\git\hew\main\Debug\shapes.r30 )
@@ -194,6 +204,7 @@ __SB__           00000480
 @ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
 @ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
 @ main ( C:\cygwin\home\root\git\hew\main\Debug\main.r30 )
+@ menus ( C:\cygwin\home\root\git\hew\main\Debug\menus.r30 )
 @ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
 @ pwm ( C:\cygwin\home\root\git\hew\main\Debug\pwm.r30 )
 @ shapes ( C:\cygwin\home\root\git\hew\main\Debug\shapes.r30 )
@@ -216,6 +227,7 @@ __SB__           00000480
 @ Interrupts ( C:\cygwin\home\root\git\hew\main\Debug\Interrupts.r30 )
 @ LCD ( C:\cygwin\home\root\git\hew\main\Debug\LCD.r30 )
 @ main ( C:\cygwin\home\root\git\hew\main\Debug\main.r30 )
+@ menus ( C:\cygwin\home\root\git\hew\main\Debug\menus.r30 )
 @ motion ( C:\cygwin\home\root\git\hew\main\Debug\motion.r30 )
 @ pwm ( C:\cygwin\home\root\git\hew\main\Debug\pwm.r30 )
 @ shapes ( C:\cygwin\home\root\git\hew\main\Debug\shapes.r30 )
@@ -241,17 +253,17 @@ data_SO
 bss_SO
                                   00000480  00000480         0   1
 data_NE
-                                  00000480  0000048f        10   2
+                                  00000480  000005bf       140   2
 bss_NE
-                                  00000490  00000539        aa   2
+                                  000005c0  0000066d        ae   2
 data_NO
-                                  0000053a  0000053a         1   1
+                                  0000066e  0000066e         1   1
 bss_NO
-                                  0000053b  0000055e        24   1
+                                  0000066f  00000692        24   1
 stack
-                                  00000560  00000b5f       600   2
+                                  00000694  00000c93       600   2
 heap
-                                  00000b60  00000e5f       300   1
+                                  00000c94  00000f93       300   1
 rom_NE
                                   0000f000  0000f000         0   1
 rom_NO
@@ -259,21 +271,21 @@ rom_NO
 rom_FE
                                   000f4000  000f4000         0   1
 rom_FO
-                                  000f4000  000f4019        1a   1
+                                  000f4000  000f4287       288   1
 data_SEI
-                                  000f401a  000f401a         0   2
+                                  000f4288  000f4288         0   2
 data_SOI
-                                  000f401a  000f401a         0   1
+                                  000f4288  000f4288         0   1
 data_NEI
-                                  000f401a  000f4029        10   2
+                                  000f4288  000f43c7       140   2
 data_NOI
-                                  000f402a  000f402a         1   1
+                                  000f43c8  000f43c8         1   1
 program
-                                  000f402c  000f4c85       c5a   2
+                                  000f43ca  000f50a7       cde   2
 interrupt
-                                  000f4c86  000f4d2c        a7   2
+                                  000f50a8  000f514e        a7   2
 program_S
-                                  000f4d2e  000f4d2e         0   2
+                                  000f5150  000f5150         0   2
 vector
                                   000ffd00  000ffdff       100   1
 fvector
@@ -290,220 +302,238 @@ FILE=ncrt0
                                   00000480  00000480         0
   __SB__
                                   00000480         0   none ,g         0
-  __pool
-                                  00000480         0   none ,g         0
 
 SECTION=data_NE
+FILE=menus
+                                  00000480  000005af       130
+  _res_menu
+                                  00000480        50   data ,g         0
+  _shape_menu
+                                  000004d0        28   data ,g         0
+  _song
+                                  000004f8        b8   data ,g         0
+
 FILE=mdata
-                                  00000480  0000048f        10
+                                  000005b0  000005bf        10
   __memt
-                                  00000488         0   none ,g         0
+                                  000005b8         0   none ,g         0
+  __pool
+                                  000005b0         0   none ,g         0
 
 SECTION=bss_NE
 FILE=main
-                                  00000490  00000531        a2
+                                  000005c0  00000663        a4
   _ticks
-                                  00000494         4   data ,g         0
+                                  000005c4         4   data ,g         0
   _adc_reg
-                                  00000498         2   data ,g         0
+                                  000005c8         2   data ,g         0
   _rx_buf_s
-                                  000004a6        42   data ,g         0
+                                  000005d6        42   data ,g         0
   _tx_buf_s
-                                  000004e8        42   data ,g         0
+                                  00000618        42   data ,g         0
   _right_pwm_high
-                                  00000490         2   data ,g         0
+                                  000005c0         2   data ,g         0
   _left_pwm_high
-                                  00000492         2   data ,g         0
+                                  000005c2         2   data ,g         0
   _an_min_on
-                                  0000049a         2   data ,g         0
+                                  000005ca         2   data ,g         0
   _an_max_on
-                                  0000049c         2   data ,g         0
+                                  000005cc         2   data ,g         0
   _an_min_off
-                                  0000049e         2   data ,g         0
+                                  000005ce         2   data ,g         0
   _an_max_off
-                                  000004a0         2   data ,g         0
+                                  000005d0         2   data ,g         0
   _an_noise
-                                  000004a2         2   data ,g         0
+                                  000005d2         2   data ,g         0
   _thresh
-                                  000004a4         2   data ,g         0
+                                  000005d4         2   data ,g         0
   _readbuf
-                                  0000052a         8   data ,g         0
+                                  0000065a         8   data ,g         0
+  _state
+                                  00000662         2   data ,g         0
 
 FILE=mdata
-                                  00000532  00000539         8
+                                  00000666  0000066d         8
   __mnext
-                                  00000532         0   none ,g         0
+                                  00000666         0   none ,g         0
   __msize
-                                  00000536         0   none ,g         0
+                                  0000066a         0   none ,g         0
 
 SECTION=bss_NO
 FILE=ncrt0
-                                  0000053b  0000053b         0
+                                  0000066f  0000066f         0
   _right_pwm_state
-                                  0000053b         1   data ,g         0
+                                  0000066f         1   data ,g         0
 
 FILE=main
-                                  0000053b  0000055e        24
+                                  0000066f  00000692        24
   _adc_s
-                                  0000053e        21   data ,g         0
+                                  00000672        21   data ,g         0
   _uart_rec
-                                  0000053d         1   data ,g         0
+                                  00000671         1   data ,g         0
   _left_pwm_state
-                                  0000053c         1   data ,g         0
+                                  00000670         1   data ,g         0
 
 SECTION=program
 FILE=C:/cygwin/home/root/git/hew/main/analog
-                                  000f402c  000f41fc       1d1
+                                  000f43ca  000f459a       1d1
   _adc_init
-                                  000f402c        17   func ,g         0
+                                  000f43ca        17   func ,g         0
   _calibrate_on
-                                  000f4044        d8   func ,g         0
+                                  000f43e2        d8   func ,g         0
 
 FILE=init
-                                  000f41fe  000f423f        42
+                                  000f459c  000f45dd        42
   _gpio_init
-                                  000f41fe        42   func ,g         0
+                                  000f459c        42   func ,g         0
 
 FILE=Interrupts
-                                  000f4240  000f4350       111
+                                  000f45de  000f46ee       111
   _uart2_rx_int
-                                  000f4240        2e   func ,g         0
+                                  000f45de        2e   func ,g         0
   _ta0_int
-                                  000f426e         9   func ,g         0
+                                  000f460c         9   func ,g         0
   _ta1_int
-                                  000f4278         a   func ,g         0
+                                  000f4616         a   func ,g         0
   _tb1_int
-                                  000f4282        46   func ,g         0
+                                  000f4620        46   func ,g         0
   _A2DInterrupt
-                                  000f42c8         6   func ,g         0
+                                  000f4666         6   func ,g         0
   _UART0TransmitInterrupt
-                                  000f42ce         6   func ,g         0
+                                  000f466c         6   func ,g         0
   _DMA0Interrupt
-                                  000f42d4         6   func ,g         0
+                                  000f4672         6   func ,g         0
   _UART0ReceiveInterrupt
-                                  000f42da         e   func ,g         0
+                                  000f4678         e   func ,g         0
   _TimerA1Interrupt
-                                  000f42e8         2   func ,g         0
+                                  000f4686         2   func ,g         0
   _TimerA2Interrupt
-                                  000f42ea         6   func ,g         0
+                                  000f4688         6   func ,g         0
   _TimerB0Interrupt
-                                  000f42f0        50   func ,g         0
+                                  000f468e        50   func ,g         0
   _KeyBoardInterrupt
-                                  000f4340         6   func ,g         0
+                                  000f46de         6   func ,g         0
   _WakeUpInterrupt
-                                  000f4346         6   func ,g         0
+                                  000f46e4         6   func ,g         0
 
 FILE=LCD
-                                  000f4352  000f4673       322
-  _cpu_init
-                                  000f4352        44   func ,g         0
+                                  000f46f0  000f4a11       322
   _lcd_init
-                                  000f4396        9c   func ,g         0
+                                  000f46f0        9c   func ,g         0
   $lcd_puts
-                                  000f4432        5e   func ,g         0
+                                  000f478c        5e   func ,g         0
   $LCD_write
-                                  000f4490        ae   func ,g         0
+                                  000f47ea        ae   func ,g         0
   _DisplayDelay
-                                  000f453e        2e   func ,g         0
+                                  000f4898        2e   func ,g         0
   $itoa
-                                  000f456c        3a   func ,g         0
+                                  000f48c6        3a   func ,g         0
   $sput_i
-                                  000f45a6        48   func ,g         0
+                                  000f4900        48   func ,g         0
+  _cpu_init
+                                  000f4948        44   func ,g         0
   $sput_ip1
-                                  000f45ee        86   func ,g         0
+                                  000f498c        86   func ,g         0
 
 FILE=main
-                                  000f4674  000f4754        e1
+                                  000f4a12  000f4ab3        a2
   _main
-                                  000f4674        b1   func ,g         0
+                                  000f4a12        79   func ,g         0
+
+FILE=menus
+                                  000f4ab4  000f4be0       12d
+  _res_menu_f
+                                  000f4ab4        3d   func ,g         0
+  _shape_menu_f
+                                  000f4af2        5b   func ,g         0
+  _song_menu_f
+                                  000f4b4c        95   func ,g         0
 
 FILE=motion
-                                  000f4756  000f47f1        9c
+                                  000f4be2  000f4c5d        7c
   _forward_left
-                                  000f4756        1a   func ,g         0
+                                  000f4be2        16   func ,g         0
   _reverse_left
-                                  000f4770        1a   func ,g         0
+                                  000f4bf8        16   func ,g         0
   _reverse_right
-                                  000f478a        1a   func ,g         0
+                                  000f4c0e        16   func ,g         0
   _forward_right
-                                  000f47a4        1a   func ,g         0
+                                  000f4c24        16   func ,g         0
   _off_right
-                                  000f47be        10   func ,g         0
+                                  000f4c3a         c   func ,g         0
   _off_left
-                                  000f47ce        10   func ,g         0
+                                  000f4c46         c   func ,g         0
   _off_all
-                                  000f47de        14   func ,g         0
+                                  000f4c52         c   func ,g         0
 
 FILE=pwm
-                                  000f47f2  000f482e        3d
+                                  000f4c5e  000f4c9a        3d
   _min_throttle
-                                  000f47f2         d   func ,g         0
+                                  000f4c5e         d   func ,g         0
 
 FILE=shapes
-                                  000f4830  000f48d0        a1
+                                  000f4c9c  000f4d3c        a1
   _find_lines
-                                  000f4830        a1   func ,g         0
+                                  000f4c9c        a1   func ,g         0
 
 FILE=timer
-                                  000f48d2  000f4908        37
+                                  000f4d3e  000f4d74        37
   _timer_init
-                                  000f48d2        37   func ,g         0
+                                  000f4d3e        37   func ,g         0
 
 FILE=uart
-                                  000f490a  000f4a2c       123
-  _uart_init
-                                  000f490a        4a   func ,g         0
+                                  000f4d76  000f4e4e        d9
   $read_from_rx_buf
-                                  000f4954        34   func ,g         0
+                                  000f4d76        34   func ,g         0
   $uart_putc_direct
-                                  000f4988        15   func ,g         0
+                                  000f4daa        15   func ,g         0
   $dbg_putc_direct
-                                  000f499e        19   func ,g         0
+                                  000f4dc0        19   func ,g         0
   _uart_puts
-                                  000f49b6        22   func ,g         0
+                                  000f4dd8        22   func ,g         0
   _dbg_puts
-                                  000f49d8        2a   func ,g         0
+                                  000f4dfa        2a   func ,g         0
   $uart_putsn
-                                  000f4a02        2b   func ,g         0
+                                  000f4e24        2b   func ,g         0
 
 FILE=_f4toi4u
-                                  000f4a2e  000f4a52        25
+                                  000f4e50  000f4e74        25
   __f4toi4U
-                                  000f4a2e        25   func ,g         0
+                                  000f4e50        25   func ,g         0
 
 FILE=_ftol
-                                  000f4a54  000f4b64       111
+                                  000f4e76  000f4f86       111
   $_ftol
-                                  000f4a54       111   func ,g         0
+                                  000f4e76       111   func ,g         0
 
 FILE=_f4muls
-                                  000f4b66  000f4c15        b0
+                                  000f4f88  000f5037        b0
   __f4mul
-                                  000f4b8a         0   func ,g         0
+                                  000f4fac         0   func ,g         0
 
 FILE=_f4rets
-                                  000f4c16  000f4c47        32
+                                  000f5038  000f5069        32
   __f4retInf
-                                  000f4c20         0   none ,g         0
+                                  000f5042         0   none ,g         0
   __f4retNaN
-                                  000f4c16         0   none ,g         0
+                                  000f5038         0   none ,g         0
   __f4retNum
-                                  000f4c30         0   none ,g         0
+                                  000f5052         0   none ,g         0
   __f4retZero
-                                  000f4c1c         0   none ,g         0
+                                  000f503e         0   none ,g         0
 
 FILE=_f4rtol
-                                  000f4c48  000f4c85        3e
+                                  000f506a  000f50a7        3e
   $_f4rtol
-                                  000f4c48        3e   func ,g         0
+                                  000f506a        3e   func ,g         0
 
 SECTION=interrupt
 FILE=ncrt0
-                                  000f4c86  000f4d2c        a7
+                                  000f50a8  000f514e        a7
   $exit
-                                  000f4d2a         0   none ,g         0
+                                  000f514c         0   none ,g         0
   _exit
-                                  000f4d2a         0   none ,g         0
+                                  000f514c         0   none ,g         0
   dummy_int
-                                  000f4d2c         0   none ,g         0
+                                  000f514e         0   none ,g         0
 
